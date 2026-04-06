@@ -1,0 +1,111 @@
+﻿{
+  "generated_at": "2026-04-06T06:42:24.603269Z",
+  "summary": {
+    "active_topic": "money_no_money_and_need_fast_income_blueprint",
+    "champion_topic": "money_no_money_and_need_fast_income_blueprint",
+    "queued_challenger": "productivity_can_t_focus_or_stay_consistent_system",
+    "queued_confirmations": 1,
+    "scale_mode": false,
+    "current_price": 39,
+    "traffic_multiplier": 2.5,
+    "suppressed": false,
+    "fatigue_penalty": 0,
+    "exploration_boost": 0,
+    "tracked_sales": 0,
+    "tracked_revenue": 0
+  },
+  "detail": {
+    "active": {
+      "topic": "money_no_money_and_need_fast_income_blueprint",
+      "category": "money",
+      "problem": "no money and need fast income",
+      "product_type": "Blueprint",
+      "title": "No Money And Need Fast Income Blueprint: Start Earning Faster",
+      "summary": "A practical digital product designed to help buyers overcome no money and need fast income with a faster, simpler system.",
+      "offer_angle": "Help people escape no money and need fast income with a fast-start system that feels immediately useful.",
+      "price": 39,
+      "cta": "Get the Fast-Start System",
+      "source_idea_id": "money_1775482919",
+      "status": "active_candidate_ready",
+      "created_at": "2026-04-06T06:41:59.195314Z",
+      "score": 140.0,
+      "promoted_at": "2026-04-06T06:41:59.277495Z",
+      "last_amplified": "2026-04-06T06:42:24.565899Z",
+      "scale_mode": false,
+      "traffic_multiplier": 2.5,
+      "suppressed": false,
+      "last_weighted": "2026-04-06T06:42:24.574132Z",
+      "traffic_split": 1.0,
+      "mode": "solo"
+    },
+    "champion": {
+      "champion_topic": "money_no_money_and_need_fast_income_blueprint",
+      "champion_score": 140.0,
+      "win_streak": 1,
+      "total_defenses": 8,
+      "total_replacements": 30,
+      "updated_at": "2026-04-06T06:42:24.545185",
+      "revenue": 8307.0,
+      "sales": 213
+    },
+    "diversity": {
+      "status": "diversity_updated",
+      "champion_topic": "money_no_money_and_need_fast_income_blueprint",
+      "win_streak": 1,
+      "recent_repeat_count": 3,
+      "same_topic_keeps": 0,
+      "fatigue_penalty": 0,
+      "exploration_boost": 0,
+      "force_challenger": false,
+      "recent_topics": [
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "money_no_money_and_need_fast_income_blueprint",
+        "money_no_money_and_need_fast_income_blueprint",
+        "money_no_money_and_need_fast_income_blueprint"
+      ],
+      "updated_at": "2026-04-06T06:42:24.417464Z"
+    },
+    "amplify": {
+      "topic": "money_no_money_and_need_fast_income_blueprint",
+      "scale_mode": false,
+      "price": 39,
+      "price_updated": false,
+      "total_sales": 0,
+      "total_revenue": 0,
+      "updated_at": "2026-04-06T06:42:24.565899Z"
+    },
+    "scaling": {
+      "topic": "money_no_money_and_need_fast_income_blueprint",
+      "traffic_multiplier": 2.5,
+      "conv_rate": 0.1874,
+      "total_revenue": 7917.0,
+      "total_visitors": 1083,
+      "total_conversions": 203,
+      "updated_at": "2026-04-06T06:42:24.573123Z"
+    },
+    "suppression": {
+      "topic": "money_no_money_and_need_fast_income_blueprint",
+      "suppressed": false,
+      "reason": "healthy_or_proven",
+      "updated_at": "2026-04-06T06:42:24.573123Z"
+    },
+    "queue": {
+      "topic": "productivity_can_t_focus_or_stay_consistent_system",
+      "score": 107.0,
+      "confirmations": 1,
+      "updated_at": "2026-04-06T06:42:24.455447Z"
+    }
+  }
+}

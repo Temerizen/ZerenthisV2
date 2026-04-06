@@ -1,0 +1,111 @@
+﻿{
+  "generated_at": "2026-04-06T06:27:33.860152Z",
+  "summary": {
+    "active_topic": "productivity_lack_of_daily_structure_blueprint",
+    "champion_topic": "productivity_lack_of_daily_structure_blueprint",
+    "queued_challenger": "productivity_overwhelmed_with_tasks_blueprint",
+    "queued_confirmations": 1,
+    "scale_mode": false,
+    "current_price": 29,
+    "traffic_multiplier": 2.5,
+    "suppressed": false,
+    "fatigue_penalty": 12,
+    "exploration_boost": 16,
+    "tracked_sales": 0,
+    "tracked_revenue": 0
+  },
+  "detail": {
+    "active": {
+      "topic": "productivity_lack_of_daily_structure_blueprint",
+      "category": "productivity",
+      "problem": "lack of daily structure",
+      "product_type": "Blueprint",
+      "title": "Lack Of Daily Structure Blueprint: Get Focused and Back in Control",
+      "summary": "A practical digital product designed to help buyers overcome lack of daily structure with a faster, simpler system.",
+      "offer_angle": "Help overwhelmed buyers fix lack of daily structure through structure, clarity, and repeatable routines.",
+      "price": 29,
+      "cta": "Get Back in Control",
+      "source_idea_id": "productivity_1775481735",
+      "status": "active_candidate_ready",
+      "created_at": "2026-04-06T06:22:15.918748Z",
+      "score": 108.0,
+      "promoted_at": "2026-04-06T06:22:16.009340Z",
+      "last_amplified": "2026-04-06T06:27:33.827544Z",
+      "scale_mode": false,
+      "traffic_multiplier": 2.5,
+      "suppressed": false,
+      "last_weighted": "2026-04-06T06:27:33.834532Z",
+      "traffic_split": 1.0,
+      "mode": "solo"
+    },
+    "champion": {
+      "champion_topic": "productivity_lack_of_daily_structure_blueprint",
+      "champion_score": 108.0,
+      "win_streak": 1,
+      "total_defenses": 8,
+      "total_replacements": 28,
+      "updated_at": "2026-04-06T06:27:33.804438",
+      "revenue": 2175.0,
+      "sales": 75
+    },
+    "diversity": {
+      "status": "diversity_updated",
+      "champion_topic": "productivity_lack_of_daily_structure_blueprint",
+      "win_streak": 1,
+      "recent_repeat_count": 16,
+      "same_topic_keeps": 0,
+      "fatigue_penalty": 12,
+      "exploration_boost": 16,
+      "force_challenger": true,
+      "recent_topics": [
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint",
+        "productivity_lack_of_daily_structure_blueprint"
+      ],
+      "updated_at": "2026-04-06T06:27:33.753992Z"
+    },
+    "amplify": {
+      "topic": "productivity_lack_of_daily_structure_blueprint",
+      "scale_mode": false,
+      "price": 29,
+      "price_updated": false,
+      "total_sales": 0,
+      "total_revenue": 0,
+      "updated_at": "2026-04-06T06:27:33.827544Z"
+    },
+    "scaling": {
+      "topic": "productivity_lack_of_daily_structure_blueprint",
+      "traffic_multiplier": 2.5,
+      "conv_rate": 0.1126,
+      "total_revenue": 2175.0,
+      "total_visitors": 666,
+      "total_conversions": 75,
+      "updated_at": "2026-04-06T06:27:33.834532Z"
+    },
+    "suppression": {
+      "topic": "productivity_lack_of_daily_structure_blueprint",
+      "suppressed": false,
+      "reason": "healthy_or_proven",
+      "updated_at": "2026-04-06T06:27:33.834532Z"
+    },
+    "queue": {
+      "topic": "productivity_overwhelmed_with_tasks_blueprint",
+      "score": 124.0,
+      "confirmations": 1,
+      "updated_at": "2026-04-06T06:27:33.779351Z"
+    }
+  }
+}

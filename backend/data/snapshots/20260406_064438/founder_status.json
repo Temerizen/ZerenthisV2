@@ -1,0 +1,111 @@
+﻿{
+  "generated_at": "2026-04-06T06:44:38.724558Z",
+  "summary": {
+    "active_topic": "money_stuck_in_low_paying_job_protocol",
+    "champion_topic": "money_stuck_in_low_paying_job_protocol",
+    "queued_challenger": "money_want_to_start_making_money_online_blueprint",
+    "queued_confirmations": 1,
+    "scale_mode": false,
+    "current_price": 39,
+    "traffic_multiplier": 2.5,
+    "suppressed": false,
+    "fatigue_penalty": 6,
+    "exploration_boost": 10,
+    "tracked_sales": 0,
+    "tracked_revenue": 0
+  },
+  "detail": {
+    "active": {
+      "topic": "money_stuck_in_low_paying_job_protocol",
+      "category": "money",
+      "problem": "stuck in low-paying job",
+      "product_type": "Protocol",
+      "title": "Stuck In Low-paying Job Protocol: Start Earning Faster",
+      "summary": "A practical digital product designed to help buyers overcome stuck in low-paying job with a faster, simpler system.",
+      "offer_angle": "Help people escape stuck in low-paying job with a fast-start system that feels immediately useful.",
+      "price": 39,
+      "cta": "Get the Fast-Start System",
+      "source_idea_id": "money_1775483028",
+      "status": "active_candidate_ready",
+      "created_at": "2026-04-06T06:43:48.146306Z",
+      "score": 139.0,
+      "promoted_at": "2026-04-06T06:43:48.267088Z",
+      "last_amplified": "2026-04-06T06:44:38.685668Z",
+      "scale_mode": false,
+      "traffic_multiplier": 2.5,
+      "suppressed": false,
+      "last_weighted": "2026-04-06T06:44:38.695454Z",
+      "traffic_split": 1.0,
+      "mode": "solo"
+    },
+    "champion": {
+      "champion_topic": "money_stuck_in_low_paying_job_protocol",
+      "champion_score": 139.0,
+      "win_streak": 1,
+      "total_defenses": 8,
+      "total_replacements": 31,
+      "updated_at": "2026-04-06T06:44:38.648144",
+      "revenue": 1599.0,
+      "sales": 41
+    },
+    "diversity": {
+      "status": "diversity_updated",
+      "champion_topic": "money_stuck_in_low_paying_job_protocol",
+      "win_streak": 1,
+      "recent_repeat_count": 6,
+      "same_topic_keeps": 0,
+      "fatigue_penalty": 6,
+      "exploration_boost": 10,
+      "force_challenger": false,
+      "recent_topics": [
+        "money_no_money_and_need_fast_income_blueprint",
+        "money_no_money_and_need_fast_income_blueprint",
+        "money_no_money_and_need_fast_income_blueprint",
+        "money_no_money_and_need_fast_income_blueprint",
+        "money_no_money_and_need_fast_income_blueprint",
+        "money_no_money_and_need_fast_income_blueprint",
+        "money_no_money_and_need_fast_income_blueprint",
+        "money_no_money_and_need_fast_income_blueprint",
+        "money_no_money_and_need_fast_income_blueprint",
+        "money_no_money_and_need_fast_income_blueprint",
+        "money_stuck_in_low_paying_job_protocol",
+        "money_stuck_in_low_paying_job_protocol",
+        "money_stuck_in_low_paying_job_protocol",
+        "money_stuck_in_low_paying_job_protocol",
+        "money_stuck_in_low_paying_job_protocol",
+        "money_stuck_in_low_paying_job_protocol"
+      ],
+      "updated_at": "2026-04-06T06:44:38.486846Z"
+    },
+    "amplify": {
+      "topic": "money_stuck_in_low_paying_job_protocol",
+      "scale_mode": false,
+      "price": 39,
+      "price_updated": false,
+      "total_sales": 0,
+      "total_revenue": 0,
+      "updated_at": "2026-04-06T06:44:38.685668Z"
+    },
+    "scaling": {
+      "topic": "money_stuck_in_low_paying_job_protocol",
+      "traffic_multiplier": 2.5,
+      "conv_rate": 0.1262,
+      "total_revenue": 1053.0,
+      "total_visitors": 214,
+      "total_conversions": 27,
+      "updated_at": "2026-04-06T06:44:38.695454Z"
+    },
+    "suppression": {
+      "topic": "money_stuck_in_low_paying_job_protocol",
+      "suppressed": false,
+      "reason": "healthy_or_proven",
+      "updated_at": "2026-04-06T06:44:38.695454Z"
+    },
+    "queue": {
+      "topic": "money_want_to_start_making_money_online_blueprint",
+      "score": 134.0,
+      "confirmations": 1,
+      "updated_at": "2026-04-06T06:44:38.539940Z"
+    }
+  }
+}

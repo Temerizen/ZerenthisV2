@@ -1,0 +1,18 @@
+﻿{
+  "generated_at": "2026-04-06T06:47:17.845650Z",
+  "active_topic": "money_stuck_in_low_paying_job_protocol",
+  "category": "money",
+  "revenue": 0.0,
+  "sales": 0,
+  "traffic_multiplier": 2.5,
+  "fatigue": 12,
+  "exploration_pressure": 16,
+  "challenger_status": "testing_in_progress",
+  "reasons": [
+    "Low traction",
+    "System boosting traffic",
+    "Topic fatigue detected",
+    "Exploration pressure active"
+  ],
+  "recommendation": "test_new_angles"
+}

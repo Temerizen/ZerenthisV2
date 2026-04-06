@@ -1,0 +1,57 @@
+﻿{
+  "status": "traffic_routed_to_active_offer",
+  "count": 5,
+  "topic": "productivity_overwhelmed_with_tasks_system",
+  "routes": [
+    {
+      "topic": "productivity_overwhelmed_with_tasks_system",
+      "title": "Overwhelmed With Tasks System: Get Focused and Back in Control",
+      "hook": "If you feel stuck in overwhelmed with tasks system: get focused and back in control, this is the simplest place to start.",
+      "summary": "A practical digital product designed to help buyers overcome overwhelmed with tasks with a faster, simpler system.",
+      "cta": "Get Back in Control",
+      "target_url": "https://checkout.local/productivity-overwhelmed-with-tasks-system",
+      "channel": "channel_1",
+      "created_at": "2026-04-06T05:00:31.910044Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_system",
+      "title": "Overwhelmed With Tasks System: Get Focused and Back in Control",
+      "hook": "Most people stay overwhelmed because they never build a real system. Overwhelmed With Tasks System: Get Focused and Back in Control changes that.",
+      "summary": "A practical digital product designed to help buyers overcome overwhelmed with tasks with a faster, simpler system.",
+      "cta": "Get Back in Control",
+      "target_url": "https://checkout.local/productivity-overwhelmed-with-tasks-system",
+      "channel": "channel_2",
+      "created_at": "2026-04-06T05:00:31.910044Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_system",
+      "title": "Overwhelmed With Tasks System: Get Focused and Back in Control",
+      "hook": "Want a faster path out of overload? Start with Overwhelmed With Tasks System: Get Focused and Back in Control.",
+      "summary": "A practical digital product designed to help buyers overcome overwhelmed with tasks with a faster, simpler system.",
+      "cta": "Get Back in Control",
+      "target_url": "https://checkout.local/productivity-overwhelmed-with-tasks-system",
+      "channel": "channel_3",
+      "created_at": "2026-04-06T05:00:31.910044Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_system",
+      "title": "Overwhelmed With Tasks System: Get Focused and Back in Control",
+      "hook": "This offer was built for people who want clarity, structure, and momentum without the chaos.",
+      "summary": "A practical digital product designed to help buyers overcome overwhelmed with tasks with a faster, simpler system.",
+      "cta": "Get Back in Control",
+      "target_url": "https://checkout.local/productivity-overwhelmed-with-tasks-system",
+      "channel": "channel_4",
+      "created_at": "2026-04-06T05:00:31.910044Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_system",
+      "title": "Overwhelmed With Tasks System: Get Focused and Back in Control",
+      "hook": "Stop guessing. Use Overwhelmed With Tasks System: Get Focused and Back in Control to get back in control.",
+      "summary": "A practical digital product designed to help buyers overcome overwhelmed with tasks with a faster, simpler system.",
+      "cta": "Get Back in Control",
+      "target_url": "https://checkout.local/productivity-overwhelmed-with-tasks-system",
+      "channel": "channel_5",
+      "created_at": "2026-04-06T05:00:31.910044Z"
+    }
+  ]
+}

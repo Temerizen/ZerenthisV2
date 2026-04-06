@@ -1,0 +1,76 @@
+﻿{
+  "status": "pipeline_candidates_ready",
+  "count": 5,
+  "candidates": [
+    {
+      "topic": "productivity_overwhelmed_with_tasks_system",
+      "category": "productivity",
+      "problem": "overwhelmed with tasks",
+      "product_type": "System",
+      "title": "Overwhelmed With Tasks System: Get Focused and Back in Control",
+      "summary": "A practical digital product designed to help buyers overcome overwhelmed with tasks with a faster, simpler system.",
+      "offer_angle": "Help overwhelmed buyers fix overwhelmed with tasks through structure, clarity, and repeatable routines.",
+      "price": 29,
+      "cta": "Get Back in Control",
+      "source_idea_id": "productivity_1775485567",
+      "status": "pipeline_candidate_ready",
+      "created_at": "2026-04-06T07:26:07.664584Z"
+    },
+    {
+      "topic": "students_low_grades_despite_effort_kit",
+      "category": "students",
+      "problem": "low grades despite effort",
+      "product_type": "Kit",
+      "title": "Low Grades Despite Effort Kit: Study Smarter and Perform Better",
+      "summary": "A practical digital product designed to help buyers overcome low grades despite effort with a faster, simpler system.",
+      "offer_angle": "Help students solve low grades despite effort with a clear study framework and immediate wins.",
+      "price": 19,
+      "cta": "Study Smarter Today",
+      "source_idea_id": "students_1775485567",
+      "status": "pipeline_candidate_ready",
+      "created_at": "2026-04-06T07:26:07.664584Z"
+    },
+    {
+      "topic": "relationships_struggling_with_confidence_protocol",
+      "category": "relationships",
+      "problem": "struggling with confidence",
+      "product_type": "Protocol",
+      "title": "Struggling With Confidence Protocol: Build Confidence and Momentum",
+      "summary": "A practical digital product designed to help buyers overcome struggling with confidence with a faster, simpler system.",
+      "offer_angle": "Help buyers move past struggling with confidence with confidence-building steps and practical scripts.",
+      "price": 29,
+      "cta": "Build Confidence Now",
+      "source_idea_id": "relationships_1775485567",
+      "status": "pipeline_candidate_ready",
+      "created_at": "2026-04-06T07:26:07.664584Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_protocol",
+      "category": "productivity",
+      "problem": "lack of daily structure",
+      "product_type": "Protocol",
+      "title": "Lack Of Daily Structure Protocol: Get Focused and Back in Control",
+      "summary": "A practical digital product designed to help buyers overcome lack of daily structure with a faster, simpler system.",
+      "offer_angle": "Help overwhelmed buyers fix lack of daily structure through structure, clarity, and repeatable routines.",
+      "price": 29,
+      "cta": "Get Back in Control",
+      "source_idea_id": "productivity_1775485567",
+      "status": "pipeline_candidate_ready",
+      "created_at": "2026-04-06T07:26:07.664584Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_system",
+      "category": "money",
+      "problem": "want to start making money online",
+      "product_type": "System",
+      "title": "Want To Start Making Money Online System: Start Earning Faster",
+      "summary": "A practical digital product designed to help buyers overcome want to start making money online with a faster, simpler system.",
+      "offer_angle": "Help people escape want to start making money online with a fast-start system that feels immediately useful.",
+      "price": 39,
+      "cta": "Get the Fast-Start System",
+      "source_idea_id": "money_1775485567",
+      "status": "pipeline_candidate_ready",
+      "created_at": "2026-04-06T07:26:07.664584Z"
+    }
+  ]
+}

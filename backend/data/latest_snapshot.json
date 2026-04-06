@@ -1,0 +1,14 @@
+﻿{
+  "timestamp": "20260406_064717",
+  "folder": "C:\\Zerenthisv2\\backend\\data\\snapshots\\20260406_064717",
+  "files": [
+    "active_candidate.json",
+    "champion_state.json",
+    "diversity_state.json",
+    "amplify_state.json",
+    "scaling_state.json",
+    "suppression_state.json",
+    "challenger_queue.json",
+    "founder_status.json"
+  ]
+}

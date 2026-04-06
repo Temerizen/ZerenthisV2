@@ -1,0 +1,2504 @@
+﻿{
+  "runs": [
+    {
+      "topic": "money_need_side_income_fast_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 24,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.2083,
+      "created_at": "2026-04-06T07:23:26.826205Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 34,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1471,
+      "created_at": "2026-04-06T07:23:28.632480Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 37,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.1622,
+      "created_at": "2026-04-06T07:23:28.680982Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 31,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1613,
+      "created_at": "2026-04-06T07:23:29.097642Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 30,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.2,
+      "created_at": "2026-04-06T07:23:29.149867Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_kit",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 24,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0417,
+      "created_at": "2026-04-06T07:23:30.312025Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_kit",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 20,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.1,
+      "created_at": "2026-04-06T07:23:30.992290Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 18,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.1667,
+      "created_at": "2026-04-06T07:23:31.707376Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 40,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.175,
+      "created_at": "2026-04-06T07:23:32.078463Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 32,
+      "conversions": 10,
+      "revenue": 390.0,
+      "conversion_rate": 0.3125,
+      "created_at": "2026-04-06T07:23:33.748559Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 27,
+      "conversions": 9,
+      "revenue": 351.0,
+      "conversion_rate": 0.3333,
+      "created_at": "2026-04-06T07:23:33.777962Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_guide",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 21,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0476,
+      "created_at": "2026-04-06T07:23:34.069272Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_guide",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 21,
+      "conversions": 3,
+      "revenue": 87.0,
+      "conversion_rate": 0.1429,
+      "created_at": "2026-04-06T07:23:34.118186Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 39,
+      "conversions": 10,
+      "revenue": 390.0,
+      "conversion_rate": 0.2564,
+      "created_at": "2026-04-06T07:23:35.434247Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 38,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.1579,
+      "created_at": "2026-04-06T07:23:36.387672Z"
+    },
+    {
+      "topic": "fitness_struggling_with_consistency_kit",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 8,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:23:36.943329Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 22,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.1364,
+      "created_at": "2026-04-06T07:23:37.311788Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 28,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.2143,
+      "created_at": "2026-04-06T07:23:38.745093Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 22,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.1364,
+      "created_at": "2026-04-06T07:23:38.770050Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 10,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.1,
+      "created_at": "2026-04-06T07:23:39.125427Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 21,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.0952,
+      "created_at": "2026-04-06T07:23:39.165873Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_system",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 14,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.1429,
+      "created_at": "2026-04-06T07:23:40.342582Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_system",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 16,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0625,
+      "created_at": "2026-04-06T07:23:41.315617Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 20,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.35,
+      "created_at": "2026-04-06T07:23:42.151211Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 31,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.129,
+      "created_at": "2026-04-06T07:23:42.358663Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 13,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.1538,
+      "created_at": "2026-04-06T07:23:43.730185Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 13,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0769,
+      "created_at": "2026-04-06T07:23:43.765365Z"
+    },
+    {
+      "topic": "productivity_can_t_focus_or_stay_consistent_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 13,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.1538,
+      "created_at": "2026-04-06T07:23:44.143917Z"
+    },
+    {
+      "topic": "productivity_can_t_focus_or_stay_consistent_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 20,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:23:44.171737Z"
+    },
+    {
+      "topic": "productivity_procrastinating_constantly_system",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 13,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.1538,
+      "created_at": "2026-04-06T07:23:45.418201Z"
+    },
+    {
+      "topic": "productivity_procrastinating_constantly_system",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 16,
+      "conversions": 3,
+      "revenue": 87.0,
+      "conversion_rate": 0.1875,
+      "created_at": "2026-04-06T07:23:46.396053Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 22,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.1364,
+      "created_at": "2026-04-06T07:23:47.367841Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 31,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1613,
+      "created_at": "2026-04-06T07:23:47.431368Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 25,
+      "conversions": 2,
+      "revenue": 78.0,
+      "conversion_rate": 0.08,
+      "created_at": "2026-04-06T07:23:48.938783Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 21,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1905,
+      "created_at": "2026-04-06T07:23:48.986236Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 23,
+      "conversions": 2,
+      "revenue": 78.0,
+      "conversion_rate": 0.087,
+      "created_at": "2026-04-06T07:23:49.180287Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 36,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1111,
+      "created_at": "2026-04-06T07:23:49.236366Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 20,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.15,
+      "created_at": "2026-04-06T07:23:50.437961Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 32,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1562,
+      "created_at": "2026-04-06T07:23:51.653536Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 36,
+      "conversions": 9,
+      "revenue": 351.0,
+      "conversion_rate": 0.25,
+      "created_at": "2026-04-06T07:23:52.571098Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_protocol",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 24,
+      "conversions": 3,
+      "revenue": 87.0,
+      "conversion_rate": 0.125,
+      "created_at": "2026-04-06T07:23:52.629421Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_protocol",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 23,
+      "conversions": 3,
+      "revenue": 87.0,
+      "conversion_rate": 0.1304,
+      "created_at": "2026-04-06T07:23:54.194620Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_protocol",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 19,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0526,
+      "created_at": "2026-04-06T07:23:54.224391Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 31,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1613,
+      "created_at": "2026-04-06T07:23:54.511036Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 32,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1562,
+      "created_at": "2026-04-06T07:23:54.555240Z"
+    },
+    {
+      "topic": "fitness_want_to_lose_fat_quickly_blueprint",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 9,
+      "conversions": 4,
+      "revenue": 116.0,
+      "conversion_rate": 0.4444,
+      "created_at": "2026-04-06T07:23:55.472725Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 34,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.1765,
+      "created_at": "2026-04-06T07:23:56.729668Z"
+    },
+    {
+      "topic": "productivity_procrastinating_constantly_system",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 19,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0526,
+      "created_at": "2026-04-06T07:23:57.561046Z"
+    },
+    {
+      "topic": "productivity_procrastinating_constantly_system",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 16,
+      "conversions": 4,
+      "revenue": 116.0,
+      "conversion_rate": 0.25,
+      "created_at": "2026-04-06T07:23:57.677862Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_guide",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 18,
+      "conversions": 4,
+      "revenue": 116.0,
+      "conversion_rate": 0.2222,
+      "created_at": "2026-04-06T07:23:59.300773Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_guide",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 11,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:23:59.320960Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 40,
+      "conversions": 12,
+      "revenue": 468.0,
+      "conversion_rate": 0.3,
+      "created_at": "2026-04-06T07:23:59.701736Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 39,
+      "conversions": 11,
+      "revenue": 429.0,
+      "conversion_rate": 0.2821,
+      "created_at": "2026-04-06T07:23:59.728510Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_protocol",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 15,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0667,
+      "created_at": "2026-04-06T07:24:00.466088Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_protocol",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 14,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0714,
+      "created_at": "2026-04-06T07:24:01.780180Z"
+    },
+    {
+      "topic": "fitness_no_time_for_gym_guide",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 12,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0833,
+      "created_at": "2026-04-06T07:24:02.785541Z"
+    },
+    {
+      "topic": "fitness_no_time_for_gym_guide",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 15,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:24:02.857255Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 36,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1389,
+      "created_at": "2026-04-06T07:24:04.297743Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 40,
+      "conversions": 10,
+      "revenue": 390.0,
+      "conversion_rate": 0.25,
+      "created_at": "2026-04-06T07:24:04.368510Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 40,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.125,
+      "created_at": "2026-04-06T07:24:04.658984Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 27,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.1111,
+      "created_at": "2026-04-06T07:24:04.685371Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 20,
+      "conversions": 4,
+      "revenue": 116.0,
+      "conversion_rate": 0.2,
+      "created_at": "2026-04-06T07:24:05.524728Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 20,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.1,
+      "created_at": "2026-04-06T07:24:06.788691Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 37,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.1892,
+      "created_at": "2026-04-06T07:24:07.883815Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 33,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.2121,
+      "created_at": "2026-04-06T07:24:08.128584Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 23,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.1304,
+      "created_at": "2026-04-06T07:24:09.303781Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 33,
+      "conversions": 10,
+      "revenue": 390.0,
+      "conversion_rate": 0.303,
+      "created_at": "2026-04-06T07:24:09.386173Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 27,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1481,
+      "created_at": "2026-04-06T07:24:10.164978Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 39,
+      "conversions": 10,
+      "revenue": 390.0,
+      "conversion_rate": 0.2564,
+      "created_at": "2026-04-06T07:24:10.182152Z"
+    },
+    {
+      "topic": "fitness_no_time_for_gym_blueprint",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 18,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.1111,
+      "created_at": "2026-04-06T07:24:10.525259Z"
+    },
+    {
+      "topic": "fitness_no_time_for_gym_blueprint",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 12,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.1667,
+      "created_at": "2026-04-06T07:24:12.066732Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_kit",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 14,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:24:13.064844Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 12,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.1667,
+      "created_at": "2026-04-06T07:24:13.395980Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 37,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1351,
+      "created_at": "2026-04-06T07:24:14.367046Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 33,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.2121,
+      "created_at": "2026-04-06T07:24:14.420578Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 25,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.12,
+      "created_at": "2026-04-06T07:24:15.338664Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 27,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.1111,
+      "created_at": "2026-04-06T07:24:15.377820Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_guide",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 24,
+      "conversions": 3,
+      "revenue": 87.0,
+      "conversion_rate": 0.125,
+      "created_at": "2026-04-06T07:24:15.565061Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 40,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.15,
+      "created_at": "2026-04-06T07:24:17.294550Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 29,
+      "conversions": 9,
+      "revenue": 351.0,
+      "conversion_rate": 0.3103,
+      "created_at": "2026-04-06T07:24:18.101287Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 12,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.1667,
+      "created_at": "2026-04-06T07:24:18.613433Z"
+    },
+    {
+      "topic": "productivity_can_t_focus_or_stay_consistent_kit",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 15,
+      "conversions": 3,
+      "revenue": 87.0,
+      "conversion_rate": 0.2,
+      "created_at": "2026-04-06T07:24:19.401432Z"
+    },
+    {
+      "topic": "productivity_can_t_focus_or_stay_consistent_kit",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 24,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0417,
+      "created_at": "2026-04-06T07:24:19.430745Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 22,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.3182,
+      "created_at": "2026-04-06T07:24:20.472102Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 22,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1818,
+      "created_at": "2026-04-06T07:24:20.486130Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_guide",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 15,
+      "conversions": 4,
+      "revenue": 116.0,
+      "conversion_rate": 0.2667,
+      "created_at": "2026-04-06T07:24:20.631665Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 23,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.2174,
+      "created_at": "2026-04-06T07:24:22.377144Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 14,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0714,
+      "created_at": "2026-04-06T07:24:23.308129Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 20,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.2,
+      "created_at": "2026-04-06T07:24:23.869095Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 24,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.2917,
+      "created_at": "2026-04-06T07:24:24.439748Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 18,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.1667,
+      "created_at": "2026-04-06T07:24:24.454339Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_kit",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 22,
+      "conversions": 5,
+      "revenue": 145.0,
+      "conversion_rate": 0.2273,
+      "created_at": "2026-04-06T07:24:25.673332Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_kit",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 11,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0909,
+      "created_at": "2026-04-06T07:24:25.688344Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_kit",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 22,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.0909,
+      "created_at": "2026-04-06T07:24:25.756470Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 28,
+      "conversions": 10,
+      "revenue": 390.0,
+      "conversion_rate": 0.3571,
+      "created_at": "2026-04-06T07:24:27.419853Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 40,
+      "conversions": 13,
+      "revenue": 507.0,
+      "conversion_rate": 0.325,
+      "created_at": "2026-04-06T07:24:28.447141Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 25,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.2,
+      "created_at": "2026-04-06T07:24:28.896293Z"
+    },
+    {
+      "topic": "productivity_can_t_focus_or_stay_consistent_guide",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 21,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.0952,
+      "created_at": "2026-04-06T07:24:29.695996Z"
+    },
+    {
+      "topic": "productivity_can_t_focus_or_stay_consistent_guide",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 19,
+      "conversions": 4,
+      "revenue": 116.0,
+      "conversion_rate": 0.2105,
+      "created_at": "2026-04-06T07:24:29.754353Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 21,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.1429,
+      "created_at": "2026-04-06T07:24:30.770267Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 30,
+      "conversions": 1,
+      "revenue": 39.0,
+      "conversion_rate": 0.0333,
+      "created_at": "2026-04-06T07:24:30.957638Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 28,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.25,
+      "created_at": "2026-04-06T07:24:30.972157Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 23,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1739,
+      "created_at": "2026-04-06T07:24:32.641045Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 24,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1667,
+      "created_at": "2026-04-06T07:24:33.638563Z"
+    },
+    {
+      "topic": "fitness_want_to_lose_fat_quickly_guide",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 20,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:24:34.195308Z"
+    },
+    {
+      "topic": "productivity_procrastinating_constantly_kit",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 13,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.1538,
+      "created_at": "2026-04-06T07:24:34.713495Z"
+    },
+    {
+      "topic": "productivity_procrastinating_constantly_kit",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 18,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0556,
+      "created_at": "2026-04-06T07:24:34.743791Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_protocol",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 14,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:24:35.788230Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_protocol",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 10,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.1,
+      "created_at": "2026-04-06T07:24:36.183736Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 20,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.25,
+      "created_at": "2026-04-06T07:24:36.247738Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 18,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.2222,
+      "created_at": "2026-04-06T07:24:37.869606Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 18,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.2222,
+      "created_at": "2026-04-06T07:24:38.651110Z"
+    },
+    {
+      "topic": "fitness_want_to_lose_fat_quickly_blueprint",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 12,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0833,
+      "created_at": "2026-04-06T07:24:39.384279Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 31,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1613,
+      "created_at": "2026-04-06T07:24:39.822627Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 40,
+      "conversions": 8,
+      "revenue": 312.0,
+      "conversion_rate": 0.2,
+      "created_at": "2026-04-06T07:24:39.879173Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 38,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.1842,
+      "created_at": "2026-04-06T07:24:40.843097Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 26,
+      "conversions": 2,
+      "revenue": 78.0,
+      "conversion_rate": 0.0769,
+      "created_at": "2026-04-06T07:24:41.182282Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 24,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.125,
+      "created_at": "2026-04-06T07:24:41.216426Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 38,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1053,
+      "created_at": "2026-04-06T07:24:42.967841Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 40,
+      "conversions": 9,
+      "revenue": 351.0,
+      "conversion_rate": 0.225,
+      "created_at": "2026-04-06T07:24:43.976282Z"
+    },
+    {
+      "topic": "productivity_procrastinating_constantly_system",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 22,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.0909,
+      "created_at": "2026-04-06T07:24:44.647336Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 29,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.2414,
+      "created_at": "2026-04-06T07:24:44.912154Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 21,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.2381,
+      "created_at": "2026-04-06T07:24:44.953978Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 23,
+      "conversions": 1,
+      "revenue": 39.0,
+      "conversion_rate": 0.0435,
+      "created_at": "2026-04-06T07:24:45.878285Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 33,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1212,
+      "created_at": "2026-04-06T07:24:46.376669Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 23,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1739,
+      "created_at": "2026-04-06T07:24:46.410327Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 25,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.16,
+      "created_at": "2026-04-06T07:24:48.005690Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 28,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1429,
+      "created_at": "2026-04-06T07:24:48.958829Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 25,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.16,
+      "created_at": "2026-04-06T07:24:49.658297Z"
+    },
+    {
+      "topic": "fitness_struggling_with_consistency_protocol",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 12,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0833,
+      "created_at": "2026-04-06T07:24:49.848285Z"
+    },
+    {
+      "topic": "fitness_struggling_with_consistency_protocol",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 9,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:24:49.880442Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_kit_2",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 38,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.1842,
+      "created_at": "2026-04-06T07:24:50.967555Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_kit_2",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 25,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.16,
+      "created_at": "2026-04-06T07:24:51.419516Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_kit_2",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 31,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.0968,
+      "created_at": "2026-04-06T07:24:51.440679Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_kit_2",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 29,
+      "conversions": 2,
+      "revenue": 78.0,
+      "conversion_rate": 0.069,
+      "created_at": "2026-04-06T07:24:53.238854Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 20,
+      "conversions": 1,
+      "revenue": 39.0,
+      "conversion_rate": 0.05,
+      "created_at": "2026-04-06T07:24:54.209632Z"
+    },
+    {
+      "topic": "fitness_struggling_with_consistency_system",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 8,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.25,
+      "created_at": "2026-04-06T07:24:54.865514Z"
+    },
+    {
+      "topic": "fitness_struggling_with_consistency_system",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 8,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.25,
+      "created_at": "2026-04-06T07:24:54.894365Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 23,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.1304,
+      "created_at": "2026-04-06T07:24:54.959826Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 33,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1212,
+      "created_at": "2026-04-06T07:24:55.956296Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 40,
+      "conversions": 9,
+      "revenue": 351.0,
+      "conversion_rate": 0.225,
+      "created_at": "2026-04-06T07:24:56.533971Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 24,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.25,
+      "created_at": "2026-04-06T07:24:56.556649Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 29,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1724,
+      "created_at": "2026-04-06T07:24:58.345665Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 25,
+      "conversions": 2,
+      "revenue": 78.0,
+      "conversion_rate": 0.08,
+      "created_at": "2026-04-06T07:24:59.296127Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 35,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.2,
+      "created_at": "2026-04-06T07:24:59.943205Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 37,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.1892,
+      "created_at": "2026-04-06T07:24:59.979502Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 18,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.1667,
+      "created_at": "2026-04-06T07:25:00.221777Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 15,
+      "conversions": 3,
+      "revenue": 87.0,
+      "conversion_rate": 0.2,
+      "created_at": "2026-04-06T07:25:00.950905Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 15,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0667,
+      "created_at": "2026-04-06T07:25:01.587906Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 14,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0714,
+      "created_at": "2026-04-06T07:25:01.623853Z"
+    },
+    {
+      "topic": "fitness_struggling_with_consistency_guide",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 19,
+      "conversions": 3,
+      "revenue": 87.0,
+      "conversion_rate": 0.1579,
+      "created_at": "2026-04-06T07:25:03.372723Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 35,
+      "conversions": 10,
+      "revenue": 390.0,
+      "conversion_rate": 0.2857,
+      "created_at": "2026-04-06T07:25:04.521799Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 18,
+      "conversions": 2,
+      "revenue": 78.0,
+      "conversion_rate": 0.1111,
+      "created_at": "2026-04-06T07:25:04.912580Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 22,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.3182,
+      "created_at": "2026-04-06T07:25:04.987468Z"
+    },
+    {
+      "topic": "fitness_struggling_with_consistency_system",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 10,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:25:05.460235Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 35,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1429,
+      "created_at": "2026-04-06T07:25:05.990292Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 30,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1667,
+      "created_at": "2026-04-06T07:25:06.643737Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 22,
+      "conversions": 2,
+      "revenue": 78.0,
+      "conversion_rate": 0.0909,
+      "created_at": "2026-04-06T07:25:06.666375Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 38,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.1579,
+      "created_at": "2026-04-06T07:25:08.572163Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_protocol",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 24,
+      "conversions": 3,
+      "revenue": 87.0,
+      "conversion_rate": 0.125,
+      "created_at": "2026-04-06T07:25:09.473601Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 21,
+      "conversions": 2,
+      "revenue": 78.0,
+      "conversion_rate": 0.0952,
+      "created_at": "2026-04-06T07:25:09.949834Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 39,
+      "conversions": 8,
+      "revenue": 312.0,
+      "conversion_rate": 0.2051,
+      "created_at": "2026-04-06T07:25:10.037625Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 32,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.125,
+      "created_at": "2026-04-06T07:25:10.508851Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 33,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.1818,
+      "created_at": "2026-04-06T07:25:11.026058Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 31,
+      "conversions": 9,
+      "revenue": 351.0,
+      "conversion_rate": 0.2903,
+      "created_at": "2026-04-06T07:25:11.702881Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 28,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1786,
+      "created_at": "2026-04-06T07:25:11.723030Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_system_2",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 10,
+      "conversions": 3,
+      "revenue": 87.0,
+      "conversion_rate": 0.3,
+      "created_at": "2026-04-06T07:25:13.654227Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 18,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.2222,
+      "created_at": "2026-04-06T07:25:14.705531Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 18,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.2222,
+      "created_at": "2026-04-06T07:25:14.963507Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 33,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.0909,
+      "created_at": "2026-04-06T07:25:14.989306Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 26,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.2308,
+      "created_at": "2026-04-06T07:25:15.850365Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 19,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.2105,
+      "created_at": "2026-04-06T07:25:16.058292Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 38,
+      "conversions": 8,
+      "revenue": 312.0,
+      "conversion_rate": 0.2105,
+      "created_at": "2026-04-06T07:25:16.999050Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 35,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.1714,
+      "created_at": "2026-04-06T07:25:17.034085Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 31,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.0968,
+      "created_at": "2026-04-06T07:25:18.697206Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 26,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.2692,
+      "created_at": "2026-04-06T07:25:19.692003Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 19,
+      "conversions": 2,
+      "revenue": 78.0,
+      "conversion_rate": 0.1053,
+      "created_at": "2026-04-06T07:25:20.002085Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 20,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.2,
+      "created_at": "2026-04-06T07:25:20.049913Z"
+    },
+    {
+      "topic": "productivity_can_t_focus_or_stay_consistent_system",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 24,
+      "conversions": 4,
+      "revenue": 116.0,
+      "conversion_rate": 0.1667,
+      "created_at": "2026-04-06T07:25:21.063543Z"
+    },
+    {
+      "topic": "productivity_can_t_focus_or_stay_consistent_system",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 10,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:25:21.154261Z"
+    },
+    {
+      "topic": "relationships_can_t_build_attraction_blueprint",
+      "category": "relationships",
+      "price": 29.0,
+      "visitors": 7,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.2857,
+      "created_at": "2026-04-06T07:25:22.047813Z"
+    },
+    {
+      "topic": "relationships_can_t_build_attraction_blueprint",
+      "category": "relationships",
+      "price": 29.0,
+      "visitors": 14,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0714,
+      "created_at": "2026-04-06T07:25:22.077939Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 30,
+      "conversions": 9,
+      "revenue": 351.0,
+      "conversion_rate": 0.3,
+      "created_at": "2026-04-06T07:25:23.796493Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 32,
+      "conversions": 9,
+      "revenue": 351.0,
+      "conversion_rate": 0.2812,
+      "created_at": "2026-04-06T07:25:24.928574Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 31,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1613,
+      "created_at": "2026-04-06T07:25:25.071454Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 39,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.1795,
+      "created_at": "2026-04-06T07:25:25.137850Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 37,
+      "conversions": 1,
+      "revenue": 39.0,
+      "conversion_rate": 0.027,
+      "created_at": "2026-04-06T07:25:26.087252Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 35,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1429,
+      "created_at": "2026-04-06T07:25:26.381004Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 29,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1724,
+      "created_at": "2026-04-06T07:25:27.064668Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 39,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.1538,
+      "created_at": "2026-04-06T07:25:27.117964Z"
+    },
+    {
+      "topic": "productivity_procrastinating_constantly_system",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 10,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.2,
+      "created_at": "2026-04-06T07:25:28.741656Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 23,
+      "conversions": 3,
+      "revenue": 87.0,
+      "conversion_rate": 0.1304,
+      "created_at": "2026-04-06T07:25:29.886325Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_kit",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 17,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.1176,
+      "created_at": "2026-04-06T07:25:30.052334Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_kit",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 19,
+      "conversions": 4,
+      "revenue": 116.0,
+      "conversion_rate": 0.2105,
+      "created_at": "2026-04-06T07:25:30.103708Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 40,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1,
+      "created_at": "2026-04-06T07:25:31.135611Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 28,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.1071,
+      "created_at": "2026-04-06T07:25:31.410568Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_protocol",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 13,
+      "conversions": 3,
+      "revenue": 87.0,
+      "conversion_rate": 0.2308,
+      "created_at": "2026-04-06T07:25:32.090322Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_protocol",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 23,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.087,
+      "created_at": "2026-04-06T07:25:32.121240Z"
+    },
+    {
+      "topic": "productivity_lack_of_daily_structure_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 23,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.087,
+      "created_at": "2026-04-06T07:25:34.079102Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 19,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.1579,
+      "created_at": "2026-04-06T07:25:35.088250Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 21,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.2381,
+      "created_at": "2026-04-06T07:25:35.151460Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 38,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.1842,
+      "created_at": "2026-04-06T07:25:35.175647Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 31,
+      "conversions": 8,
+      "revenue": 312.0,
+      "conversion_rate": 0.2581,
+      "created_at": "2026-04-06T07:25:36.180245Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 29,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1724,
+      "created_at": "2026-04-06T07:25:36.708283Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 25,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.16,
+      "created_at": "2026-04-06T07:25:37.120527Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 38,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.1842,
+      "created_at": "2026-04-06T07:25:37.190421Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 33,
+      "conversions": 10,
+      "revenue": 390.0,
+      "conversion_rate": 0.303,
+      "created_at": "2026-04-06T07:25:39.209110Z"
+    },
+    {
+      "topic": "productivity_procrastinating_constantly_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 15,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0667,
+      "created_at": "2026-04-06T07:25:40.077670Z"
+    },
+    {
+      "topic": "productivity_procrastinating_constantly_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 15,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.1333,
+      "created_at": "2026-04-06T07:25:40.163921Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 26,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1538,
+      "created_at": "2026-04-06T07:25:40.225372Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 30,
+      "conversions": 8,
+      "revenue": 312.0,
+      "conversion_rate": 0.2667,
+      "created_at": "2026-04-06T07:25:41.213940Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_guide",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 32,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.2188,
+      "created_at": "2026-04-06T07:25:41.739738Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 21,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1905,
+      "created_at": "2026-04-06T07:25:42.223668Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_protocol",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 20,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.2,
+      "created_at": "2026-04-06T07:25:42.262413Z"
+    },
+    {
+      "topic": "fitness_struggling_with_consistency_system",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 12,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0833,
+      "created_at": "2026-04-06T07:25:44.157835Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_guide",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 22,
+      "conversions": 3,
+      "revenue": 87.0,
+      "conversion_rate": 0.1364,
+      "created_at": "2026-04-06T07:25:45.183698Z"
+    },
+    {
+      "topic": "productivity_procrastinating_constantly_protocol",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 23,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:25:45.224847Z"
+    },
+    {
+      "topic": "productivity_procrastinating_constantly_protocol_2",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 12,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0833,
+      "created_at": "2026-04-06T07:25:46.199077Z"
+    },
+    {
+      "topic": "productivity_procrastinating_constantly_protocol_2",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 24,
+      "conversions": 3,
+      "revenue": 87.0,
+      "conversion_rate": 0.125,
+      "created_at": "2026-04-06T07:25:46.973482Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 32,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.2188,
+      "created_at": "2026-04-06T07:25:47.311496Z"
+    },
+    {
+      "topic": "money_no_money_and_need_fast_income_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 29,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1379,
+      "created_at": "2026-04-06T07:25:47.337385Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 28,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.25,
+      "created_at": "2026-04-06T07:25:49.391132Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 30,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1667,
+      "created_at": "2026-04-06T07:25:50.238082Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 40,
+      "conversions": 7,
+      "revenue": 273.0,
+      "conversion_rate": 0.175,
+      "created_at": "2026-04-06T07:25:50.273313Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 36,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.1667,
+      "created_at": "2026-04-06T07:25:50.300481Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 20,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.05,
+      "created_at": "2026-04-06T07:25:51.240457Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 19,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0526,
+      "created_at": "2026-04-06T07:25:51.994459Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 20,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:25:52.504005Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 28,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.1786,
+      "created_at": "2026-04-06T07:25:52.507566Z"
+    },
+    {
+      "topic": "fitness_want_to_lose_fat_quickly_blueprint",
+      "category": "fitness",
+      "price": 29.0,
+      "visitors": 16,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:25:54.346292Z"
+    },
+    {
+      "topic": "relationships_recent_breakup_recovery_guide",
+      "category": "relationships",
+      "price": 29.0,
+      "visitors": 7,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:25:55.240710Z"
+    },
+    {
+      "topic": "relationships_recent_breakup_recovery_guide",
+      "category": "relationships",
+      "price": 29.0,
+      "visitors": 15,
+      "conversions": 1,
+      "revenue": 29.0,
+      "conversion_rate": 0.0667,
+      "created_at": "2026-04-06T07:25:55.273079Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 36,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1111,
+      "created_at": "2026-04-06T07:25:55.571169Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 39,
+      "conversions": 10,
+      "revenue": 390.0,
+      "conversion_rate": 0.2564,
+      "created_at": "2026-04-06T07:25:56.341394Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 37,
+      "conversions": 8,
+      "revenue": 312.0,
+      "conversion_rate": 0.2162,
+      "created_at": "2026-04-06T07:25:57.422778Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_kit",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 19,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.1579,
+      "created_at": "2026-04-06T07:25:57.445578Z"
+    },
+    {
+      "topic": "productivity_overwhelmed_with_tasks_kit",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 22,
+      "conversions": 0,
+      "revenue": 0.0,
+      "conversion_rate": 0.0,
+      "created_at": "2026-04-06T07:25:57.482407Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 25,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.2,
+      "created_at": "2026-04-06T07:25:59.522736Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 29,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.2069,
+      "created_at": "2026-04-06T07:26:00.344380Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 40,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.075,
+      "created_at": "2026-04-06T07:26:00.370107Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 20,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.3,
+      "created_at": "2026-04-06T07:26:00.524169Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 37,
+      "conversions": 11,
+      "revenue": 429.0,
+      "conversion_rate": 0.2973,
+      "created_at": "2026-04-06T07:26:01.355397Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 36,
+      "conversions": 3,
+      "revenue": 117.0,
+      "conversion_rate": 0.0833,
+      "created_at": "2026-04-06T07:26:02.432007Z"
+    },
+    {
+      "topic": "money_want_to_start_making_money_online_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 28,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.2143,
+      "created_at": "2026-04-06T07:26:02.579615Z"
+    },
+    {
+      "topic": "money_stuck_in_low_paying_job_system",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 38,
+      "conversions": 6,
+      "revenue": 234.0,
+      "conversion_rate": 0.1579,
+      "created_at": "2026-04-06T07:26:04.478624Z"
+    },
+    {
+      "topic": "productivity_can_t_focus_or_stay_consistent_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 19,
+      "conversions": 2,
+      "revenue": 58.0,
+      "conversion_rate": 0.1053,
+      "created_at": "2026-04-06T07:26:05.397050Z"
+    },
+    {
+      "topic": "productivity_can_t_focus_or_stay_consistent_blueprint",
+      "category": "productivity",
+      "price": 29.0,
+      "visitors": 22,
+      "conversions": 5,
+      "revenue": 145.0,
+      "conversion_rate": 0.2273,
+      "created_at": "2026-04-06T07:26:05.461282Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 37,
+      "conversions": 4,
+      "revenue": 156.0,
+      "conversion_rate": 0.1081,
+      "created_at": "2026-04-06T07:26:05.531188Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 23,
+      "conversions": 5,
+      "revenue": 195.0,
+      "conversion_rate": 0.2174,
+      "created_at": "2026-04-06T07:26:06.365540Z"
+    },
+    {
+      "topic": "money_need_side_income_fast_blueprint",
+      "category": "money",
+      "price": 39.0,
+      "visitors": 19,
+      "conversions": 2,
+      "revenue": 78.0,
+      "conversion_rate": 0.1053,
+      "created_at": "2026-04-06T07:26:07.723356Z"
+    }
+  ]
+}

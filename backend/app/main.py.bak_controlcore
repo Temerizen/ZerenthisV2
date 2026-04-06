@@ -1,0 +1,16 @@
+﻿from fastapi import FastAPI
+from backend.app.routes.intelligence import router as intelligence_router
+from backend.app.routes.autonomy import router as autonomy_router
+from backend.app.routes.performance import router as performance_router
+from backend.app.routes.output import router as output_router
+
+app = FastAPI(title="Zerenthis V2")
+
+app.include_router(intelligence_router, prefix="/api")
+app.include_router(autonomy_router, prefix="/api")
+app.include_router(performance_router, prefix="/api")
+app.include_router(output_router, prefix="/api")
+
+@app.get("/health")
+def health():
+    return {"status": "ok"}

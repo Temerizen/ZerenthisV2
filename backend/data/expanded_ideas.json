@@ -1,0 +1,51 @@
+﻿{
+  "status": "expanded_ideas_generated",
+  "count": 5,
+  "ideas": [
+    {
+      "id": "productivity_1775485567",
+      "category": "productivity",
+      "problem": "overwhelmed with tasks",
+      "outcome": "solve overwhelmed with tasks in 7 days",
+      "title": "Solve Overwhelmed With Tasks In 7 Days",
+      "product_type": "System",
+      "created_at": "2026-04-06T07:26:07.650398Z"
+    },
+    {
+      "id": "students_1775485567",
+      "category": "students",
+      "problem": "low grades despite effort",
+      "outcome": "step-by-step plan to eliminate low grades despite effort",
+      "title": "Step-By-Step Plan To Eliminate Low Grades Despite Effort",
+      "product_type": "Kit",
+      "created_at": "2026-04-06T07:26:07.650398Z"
+    },
+    {
+      "id": "relationships_1775485567",
+      "category": "relationships",
+      "problem": "struggling with confidence",
+      "outcome": "build a system to fix struggling with confidence",
+      "title": "Build A System To Fix Struggling With Confidence",
+      "product_type": "Protocol",
+      "created_at": "2026-04-06T07:26:07.650398Z"
+    },
+    {
+      "id": "productivity_1775485567",
+      "category": "productivity",
+      "problem": "lack of daily structure",
+      "outcome": "step-by-step plan to eliminate lack of daily structure",
+      "title": "Step-By-Step Plan To Eliminate Lack Of Daily Structure",
+      "product_type": "Protocol",
+      "created_at": "2026-04-06T07:26:07.650398Z"
+    },
+    {
+      "id": "money_1775485567",
+      "category": "money",
+      "problem": "want to start making money online",
+      "outcome": "build a system to fix want to start making money online",
+      "title": "Build A System To Fix Want To Start Making Money Online",
+      "product_type": "System",
+      "created_at": "2026-04-06T07:26:07.650398Z"
+    }
+  ]
+}

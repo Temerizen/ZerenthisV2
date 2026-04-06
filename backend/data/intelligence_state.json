@@ -1,0 +1,91 @@
+﻿{
+  "observations": [
+    {
+      "time": "2026-04-06T07:39:35.183639",
+      "signal": {
+        "topic": "ai productivity system",
+        "score": 9
+      }
+    },
+    {
+      "time": "2026-04-06T07:41:31.050733",
+      "signal": {
+        "topic": "Ultimate ai productivity system System That Dominates Results",
+        "score": 7.5
+      }
+    },
+    {
+      "time": "2026-04-06T07:41:33.079490",
+      "signal": {
+        "topic": "Ultimate ai productivity system System That Dominates Results",
+        "score": 8.75
+      }
+    },
+    {
+      "time": "2026-04-06T07:41:35.106467",
+      "signal": {
+        "topic": "Ultimate Ultimate ai productivity system System That Dominates Results System That Dominates Results",
+        "score": 7.5
+      }
+    },
+    {
+      "time": "2026-04-06T07:41:37.140289",
+      "signal": {
+        "topic": "Ultimate Ultimate ai productivity system System That Dominates Results System That Dominates Results",
+        "score": 8.75
+      }
+    },
+    {
+      "time": "2026-04-06T07:41:39.169455",
+      "signal": {
+        "topic": "Ultimate Ultimate ai productivity system System That Dominates Results System That Dominates Results",
+        "score": 9.9
+      }
+    },
+    {
+      "time": "2026-04-06T07:47:15.916177",
+      "signal": {
+        "topic": "Ultimate Ultimate Ultimate ai productivity system System That Dominates Results System That Dominates Results System That Dominates Results",
+        "score": 7.5
+      }
+    },
+    {
+      "time": "2026-04-06T07:49:33.243353",
+      "signal": {
+        "topic": "Blueprint for Ultimate Ultimate ai productivity system System That Dominates Results System That Dominates Results That Gets Extreme Results",
+        "score": 7
+      }
+    },
+    {
+      "time": "2026-04-06T07:49:37.292995",
+      "signal": {
+        "topic": "Engine for Ultimate Ultimate ai productivity system System That Dominates Results System That Dominates Results That Gets Extreme Results",
+        "score": 7
+      }
+    },
+    {
+      "time": "2026-04-06T07:52:49.878892",
+      "signal": {
+        "topic": "Method for Ultimate ai productivity system System That Dominates Results System That Dominates Results That Gets Extreme Results",
+        "score": 7
+      }
+    },
+    {
+      "time": "2026-04-06T07:52:51.928837",
+      "signal": {
+        "topic": "System for Ultimate ai productivity system System That Dominates Results System That Dominates Results That Gets Extreme Results",
+        "score": 7
+      }
+    }
+  ],
+  "scores": {
+    "ai productivity system": 9,
+    "Ultimate ai productivity system System That Dominates Results": 16.25,
+    "Ultimate Ultimate ai productivity system System That Dominates Results System That Dominates Results": 26.15,
+    "Ultimate Ultimate Ultimate ai productivity system System That Dominates Results System That Dominates Results System That Dominates Results": 7.5,
+    "Blueprint for Ultimate Ultimate ai productivity system System That Dominates Results System That Dominates Results That Gets Extreme Results": 7,
+    "Engine for Ultimate Ultimate ai productivity system System That Dominates Results System That Dominates Results That Gets Extreme Results": 7,
+    "Method for Ultimate ai productivity system System That Dominates Results System That Dominates Results That Gets Extreme Results": 7,
+    "System for Ultimate ai productivity system System That Dominates Results System That Dominates Results That Gets Extreme Results": 7
+  }
+}

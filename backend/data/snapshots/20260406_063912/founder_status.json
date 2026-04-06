@@ -1,0 +1,111 @@
+﻿{
+  "generated_at": "2026-04-06T06:39:12.686943Z",
+  "summary": {
+    "active_topic": "productivity_can_t_focus_or_stay_consistent_guide",
+    "champion_topic": "productivity_can_t_focus_or_stay_consistent_guide",
+    "queued_challenger": "money_want_to_start_making_money_online_kit",
+    "queued_confirmations": 1,
+    "scale_mode": false,
+    "current_price": 29,
+    "traffic_multiplier": 2.5,
+    "suppressed": false,
+    "fatigue_penalty": 12,
+    "exploration_boost": 16,
+    "tracked_sales": 0,
+    "tracked_revenue": 0
+  },
+  "detail": {
+    "active": {
+      "topic": "productivity_can_t_focus_or_stay_consistent_guide",
+      "category": "productivity",
+      "problem": "can't focus or stay consistent",
+      "product_type": "Guide",
+      "title": "Can't Focus Or Stay Consistent Guide: Get Focused and Back in Control",
+      "summary": "A practical digital product designed to help buyers overcome can't focus or stay consistent with a faster, simpler system.",
+      "offer_angle": "Help overwhelmed buyers fix can't focus or stay consistent through structure, clarity, and repeatable routines.",
+      "price": 29,
+      "cta": "Get Back in Control",
+      "source_idea_id": "productivity_1775482234",
+      "status": "active_candidate_ready",
+      "created_at": "2026-04-06T06:30:34.935563Z",
+      "score": 121.0,
+      "promoted_at": "2026-04-06T06:30:35.034592Z",
+      "last_amplified": "2026-04-06T06:39:12.651331Z",
+      "scale_mode": false,
+      "traffic_multiplier": 2.5,
+      "suppressed": false,
+      "last_weighted": "2026-04-06T06:39:12.660605Z",
+      "traffic_split": 1.0,
+      "mode": "solo"
+    },
+    "champion": {
+      "champion_topic": "productivity_can_t_focus_or_stay_consistent_guide",
+      "champion_score": 121.0,
+      "win_streak": 1,
+      "total_defenses": 8,
+      "total_replacements": 29,
+      "updated_at": "2026-04-06T06:39:12.636046",
+      "revenue": 3132.0,
+      "sales": 108
+    },
+    "diversity": {
+      "status": "diversity_updated",
+      "champion_topic": "productivity_can_t_focus_or_stay_consistent_guide",
+      "win_streak": 1,
+      "recent_repeat_count": 16,
+      "same_topic_keeps": 0,
+      "fatigue_penalty": 12,
+      "exploration_boost": 16,
+      "force_challenger": true,
+      "recent_topics": [
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide",
+        "productivity_can_t_focus_or_stay_consistent_guide"
+      ],
+      "updated_at": "2026-04-06T06:39:12.512517Z"
+    },
+    "amplify": {
+      "topic": "productivity_can_t_focus_or_stay_consistent_guide",
+      "scale_mode": false,
+      "price": 29,
+      "price_updated": false,
+      "total_sales": 0,
+      "total_revenue": 0,
+      "updated_at": "2026-04-06T06:39:12.652331Z"
+    },
+    "scaling": {
+      "topic": "productivity_can_t_focus_or_stay_consistent_guide",
+      "traffic_multiplier": 2.5,
+      "conv_rate": 0.1049,
+      "total_revenue": 3132.0,
+      "total_visitors": 1030,
+      "total_conversions": 108,
+      "updated_at": "2026-04-06T06:39:12.659605Z"
+    },
+    "suppression": {
+      "topic": "productivity_can_t_focus_or_stay_consistent_guide",
+      "suppressed": false,
+      "reason": "healthy_or_proven",
+      "updated_at": "2026-04-06T06:39:12.659605Z"
+    },
+    "queue": {
+      "topic": "money_want_to_start_making_money_online_kit",
+      "score": 139.0,
+      "confirmations": 1,
+      "updated_at": "2026-04-06T06:39:12.554631Z"
+    }
+  }
+}
