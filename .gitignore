@@ -36,3 +36,16 @@ __pycache__/
 *.pyc
 frontend/node_modules/
 frontend/dist/
+backend/data/snapshots/
+backend/data/export_bundles/
+backend/outputs/
+backend/data/*.db
+backend/data/*.sqlite
+backend/data/*.sqlite3
+ZerenthisV2_LOCKED_*/
+PURGE_*/
+venv/
+__pycache__/
+*.pyc
+frontend/node_modules/
+frontend/dist/
