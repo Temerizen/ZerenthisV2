@@ -1,0 +1,81 @@
+{
+  "status": "full_cycle_complete",
+  "priority": {
+    "timestamp": "2026-04-07T19:46:10.510889",
+    "candidate_count": 7,
+    "top_target": {
+      "topic": "money_need_side_income_fast_blueprint",
+      "source": "leaderboard",
+      "revenue": 468,
+      "conversions": 12,
+      "total_score": 1636
+    },
+    "ranked": [
+      {
+        "topic": "money_need_side_income_fast_blueprint",
+        "source": "leaderboard",
+        "revenue": 468,
+        "conversions": 12,
+        "total_score": 1636
+      },
+      {
+        "topic": "money_stuck_in_low_paying_job_system",
+        "source": "leaderboard",
+        "revenue": 234,
+        "conversions": 6,
+        "total_score": 868
+      },
+      {
+        "topic": "productivity_can_t_focus_or_stay_consistent_blueprint",
+        "source": "leaderboard",
+        "revenue": 203,
+        "conversions": 7,
+        "total_score": 856
+      },
+      {
+        "topic": "money_want_to_start_making_money_online_blueprint",
+        "source": "leaderboard",
+        "revenue": 156,
+        "conversions": 4,
+        "total_score": 612
+      },
+      {
+        "topic": "faceless content automation",
+        "source": "seed",
+        "total_score": 24.9537
+      },
+      {
+        "topic": "ai side hustle system",
+        "source": "seed",
+        "total_score": 24.6078
+      },
+      {
+        "topic": "dopamine reset system",
+        "source": "seed",
+        "total_score": 16.6265
+      }
+    ]
+  },
+  "product": {
+    "status": "product_generated",
+    "topic": "money_need_side_income_fast_blueprint",
+    "file": "C:\\Zerenthisv2\\backend\\outputs\\money_need_side_income_fast_blueprint_1775591170.json",
+    "product": {
+      "topic": "money_need_side_income_fast_blueprint",
+      "title": "Money Need Side Income Fast Blueprint",
+      "description": "A proven system based on money_need_side_income_fast_blueprint designed to generate results using validated market demand.",
+      "steps": [
+        "Understand the exact problem this topic solves",
+        "Apply a simple repeatable system",
+        "Execute daily with minimal friction",
+        "Track results and refine based on performance"
+      ],
+      "value_bullets": [
+        "Built from proven revenue-generating ideas",
+        "Focused on execution, not theory",
+        "Simple system that compounds over time",
+        "Easy to package and sell"
+      ]
+    }
+  }
+}

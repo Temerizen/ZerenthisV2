@@ -1,83 +1,70 @@
-from __future__ import annotations
+﻿from pathlib import Path
+import json
+import time
 
-from typing import Dict, List
+BASE_DIR = Path(__file__).resolve().parents[3]
+DATA_DIR = BASE_DIR / "backend" / "data"
+OUTPUT_DIR = BASE_DIR / "backend" / "outputs"
+CURRENT_TOPIC_FILE = DATA_DIR / "current_topic.json"
 
-def _title_from_topic(topic: str) -> str:
-    topic = (topic or "").strip()
-    words = [w for w in topic.replace("_", " ").split() if w]
-    headline = " ".join(w.capitalize() for w in words[:8]).strip()
-    if not headline:
-        headline = "Premium Digital System"
-    return headline
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-def generate_product(topic: str) -> Dict[str, object]:
-    topic = (topic or "").strip()
-    title = _title_from_topic(topic)
-    description = (
-        f"{title} is a premium digital system built around the idea of {topic}. "
-        f"It gives the buyer a clearer path, faster execution, and a practical framework "
-        f"they can apply immediately without drowning in complexity."
-    )
+def _get_locked_topic(default_topic: str = "default_topic") -> str:
+    try:
+        if CURRENT_TOPIC_FILE.exists():
+            data = json.loads(CURRENT_TOPIC_FILE.read_text(encoding="utf-8"))
+            return data.get("topic") or default_topic
+    except Exception:
+        pass
+    return default_topic
 
-    steps: List[str] = [
-        f"Clarify the goal and remove friction around {topic}",
-        "Install a repeatable daily execution loop",
-        "Use templates and decision rules to reduce overthinking",
-        "Track momentum weekly and refine what actually works",
-    ]
-
-    value_bullets: List[str] = [
-        "Turns a vague problem into a structured action plan",
-        "Saves time by reducing trial-and-error and scattered effort",
-        "Creates a reusable framework instead of one-off advice",
-        "Easy to package as a PDF, mini-course, or creator product",
-    ]
-
-    bonus = (
-        "Bonus: plug-and-play templates, quick-start checklist, and a momentum tracker "
-        "to help the buyer implement the system fast."
-    )
-
-    full_content = f"""# {title}
-
-## Core Promise
-Master {topic} with a cleaner, simpler system that is designed for real execution.
-
-## What This Product Helps With
-This product helps the buyer move from confusion to focused action. It removes clutter,
-builds clarity, and gives them a repeatable process they can use right away.
-
-## System Steps
-1. {steps[0]}
-2. {steps[1]}
-3. {steps[2]}
-4. {steps[3]}
-
-## Value
-- {value_bullets[0]}
-- {value_bullets[1]}
-- {value_bullets[2]}
-- {value_bullets[3]}
-
-## Bonus
-{bonus}
-
-## Suggested Positioning
-Sell this as a premium starter system, practical blueprint, or implementation pack.
-
-## Delivery Formats
-- PDF guide
-- checklist
-- swipe file
-- creator toolkit
-"""
-
+def _build_product(topic: str) -> dict:
+    title = topic.replace("_", " ").title()
     return {
         "topic": topic,
         "title": title,
-        "description": description,
-        "steps": steps,
-        "value_bullets": value_bullets,
-        "bonus": bonus,
-        "full_content": full_content,
+        "description": f"A proven system based on {topic} designed to generate results using validated market demand.",
+        "steps": [
+            "Understand the exact problem this topic solves",
+            "Apply a simple repeatable system",
+            "Execute daily with minimal friction",
+            "Track results and refine based on performance"
+        ],
+        "value_bullets": [
+            "Built from proven revenue-generating ideas",
+            "Focused on execution, not theory",
+            "Simple system that compounds over time",
+            "Easy to package and sell"
+        ]
     }
+
+def _write_product_file(topic: str, product: dict) -> str:
+    filename = OUTPUT_DIR / f"{topic}_{int(time.time())}.json"
+    filename.write_text(json.dumps(product, indent=2), encoding="utf-8")
+    return str(filename)
+
+def run_product_engine():
+    topic = _get_locked_topic()
+    product = _build_product(topic)
+    filename = _write_product_file(topic, product)
+    return {
+        "status": "product_generated",
+        "topic": topic,
+        "file": filename,
+        "product": product
+    }
+
+def generate_product(topic: str | None = None):
+    chosen_topic = topic or _get_locked_topic()
+    product = _build_product(chosen_topic)
+    filename = _write_product_file(chosen_topic, product)
+    return {
+        "status": "product_generated",
+        "topic": chosen_topic,
+        "file": filename,
+        "product": product
+    }
+
+def build_product(topic: str | None = None):
+    return generate_product(topic)

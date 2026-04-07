@@ -1,25 +1,17 @@
-from backend.app.routes.bundle import router as bundle_router
-from backend.app.routes.full_loop import router as full_loop_router
+﻿from fastapi import FastAPI
+from backend.app.routes.intelligence_priority import router as intelligence_priority_router
 from backend.app.routes.product import router as product_router
-from backend.app.routes.control import router as control_router
-from fastapi import FastAPI
-from backend.app.routes.intelligence import router as intelligence_router
-from backend.app.routes.autonomy import router as autonomy_router
-from backend.app.routes.performance import router as performance_router
-from backend.app.routes.output import router as output_router
+from backend.app.routes.full_cycle import router as full_cycle_router
+from backend.app.routes.revenue import router as revenue_router
 
-app = FastAPI(title="Zerenthis V2")
+app = FastAPI()
 
-app.include_router(intelligence_router, prefix="/api")
-app.include_router(autonomy_router, prefix="/api")
-app.include_router(performance_router, prefix="/api")
-app.include_router(output_router, prefix="/api")
+app.include_router(intelligence_priority_router)
+app.include_router(product_router)
+app.include_router(full_cycle_router)
+app.include_router(revenue_router)
 
 @app.get("/health")
 def health():
     return {"status": "ok"}
 
-app.include_router(control_router)
-app.include_router(product_router)
-app.include_router(full_loop_router)
-app.include_router(bundle_router)

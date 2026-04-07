@@ -1,6 +1,6 @@
 {
   "active_topic": "AI productivity system for overwhelmed creators",
-  "last_product_file": "C:\\Zerenthisv2\\backend\\outputs\\ai_productivity_system_for_overwhelmed_creators_bundle.json",
+  "last_product_file": "C:\\Zerenthisv2\\backend\\outputs\\ai_productivity_system_for_overwhelmed_creators_product.json",
   "last_offer_file": "C:\\Zerenthisv2\\backend\\outputs\\ai_productivity_system_for_overwhelmed_creators_bundle.json",
   "last_traffic_file": "C:\\Zerenthisv2\\backend\\outputs\\ai_productivity_system_for_overwhelmed_creators_bundle.json",
   "last_full_loop_file": "C:\\Zerenthisv2\\backend\\outputs\\ai_productivity_system_for_overwhelmed_creators_bundle.json",
@@ -29,6 +29,11 @@
       "json_file": "C:\\Zerenthisv2\\backend\\outputs\\ai_productivity_system_for_overwhelmed_creators_bundle.json",
       "pdf_file": "C:\\Zerenthisv2\\backend\\outputs\\ai_productivity_system_for_overwhelmed_creators_bundle.pdf",
       "pdf_status": "generated"
+    },
+    {
+      "event": "product_generated",
+      "topic": "AI productivity system for overwhelmed creators",
+      "file": "C:\\Zerenthisv2\\backend\\outputs\\ai_productivity_system_for_overwhelmed_creators_product.json"
     }
   ]
 }

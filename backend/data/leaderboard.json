@@ -1,29 +1,24 @@
-﻿{
-  "updated_at": "2026-04-06T07:41:39.143745Z",
+{
   "leaders": [
     {
       "topic": "money_need_side_income_fast_blueprint",
-      "conversions": 12,
-      "revenue": 468.0,
-      "score": 528.0
+      "revenue": 487,
+      "conversions": 13
     },
     {
       "topic": "money_stuck_in_low_paying_job_system",
-      "conversions": 6,
-      "revenue": 234.0,
-      "score": 264.0
+      "revenue": 234,
+      "conversions": 6
     },
     {
       "topic": "productivity_can_t_focus_or_stay_consistent_blueprint",
-      "conversions": 7,
-      "revenue": 203.0,
-      "score": 238.0
+      "revenue": 203,
+      "conversions": 7
     },
     {
       "topic": "money_want_to_start_making_money_online_blueprint",
-      "conversions": 4,
-      "revenue": 156.0,
-      "score": 176.0
+      "revenue": 156,
+      "conversions": 4
     }
   ]
 }
