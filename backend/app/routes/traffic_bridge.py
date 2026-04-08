@@ -1,4 +1,4 @@
-﻿from fastapi import APIRouter
+from fastapi import APIRouter
 from backend.app.engines.traffic_bridge import run
 
 router = APIRouter()

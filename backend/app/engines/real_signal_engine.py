@@ -1,4 +1,4 @@
-﻿def build_signal(asset, strategy_name, dna, bias):
+def build_signal(asset, strategy_name, dna, bias):
     change = asset.get("change", 0)
     price = asset.get("price", 0)
 

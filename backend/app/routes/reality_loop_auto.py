@@ -1,4 +1,4 @@
-﻿from fastapi import APIRouter, Body
+from fastapi import APIRouter, Body
 from backend.app.engines.reality_loop_auto import run
 
 router = APIRouter()

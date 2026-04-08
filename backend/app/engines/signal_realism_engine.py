@@ -1,4 +1,4 @@
-﻿import random
+import random
 
 def distort_signal(change, confidence):
     # introduce wrong interpretation of market

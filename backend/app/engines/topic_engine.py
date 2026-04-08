@@ -1,4 +1,4 @@
-﻿import random
+import random
 
 REAL_TOPICS = [
     "ai side hustle system",

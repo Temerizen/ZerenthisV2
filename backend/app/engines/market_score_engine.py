@@ -1,4 +1,4 @@
-﻿from backend.app.engines.market_portfolio_engine import load_portfolio
+from backend.app.engines.market_portfolio_engine import load_portfolio
 
 def score_trades(trades):
     total = round(sum(float(t.get("profit", 0)) for t in trades), 2)

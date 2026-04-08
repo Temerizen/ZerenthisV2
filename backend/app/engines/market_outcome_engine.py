@@ -1,4 +1,4 @@
-﻿import random
+import random
 
 def simulate_market_outcome(change):
     # true market movement deviates from observed signal

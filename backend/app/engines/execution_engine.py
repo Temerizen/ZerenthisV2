@@ -1,4 +1,4 @@
-﻿def calculate_trade_profit(action, position_size, real_change):
+def calculate_trade_profit(action, position_size, real_change):
     # BUY: profit if price goes up
     if action == "BUY":
         pnl = real_change * position_size

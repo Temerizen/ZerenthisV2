@@ -1,4 +1,4 @@
-﻿from fastapi import APIRouter, Body
+from fastapi import APIRouter, Body
 from backend.app.engines.multi_target_manager import run
 
 router = APIRouter()

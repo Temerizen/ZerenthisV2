@@ -1,4 +1,4 @@
-﻿from pathlib import Path
+from pathlib import Path
 import json
 
 BASE_DIR = Path(__file__).resolve().parents[3]

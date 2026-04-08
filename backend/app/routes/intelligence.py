@@ -1,4 +1,4 @@
-﻿from fastapi import APIRouter
+from fastapi import APIRouter
 from backend.app.engines.decision_engine import decide, get_current_topic
 from backend.app.engines.target_engine import generate_targets
 

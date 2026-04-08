@@ -1,4 +1,4 @@
-﻿def is_trade_valid(strategy, regime):
+def is_trade_valid(strategy, regime):
     if regime == "bull" and strategy == "momentum":
         return True
     if regime == "bear" and strategy == "momentum":

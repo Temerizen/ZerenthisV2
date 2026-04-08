@@ -1,4 +1,4 @@
-﻿from fastapi import APIRouter, Body
+from fastapi import APIRouter, Body
 from backend.app.engines.posting_bridge import run
 
 router = APIRouter()

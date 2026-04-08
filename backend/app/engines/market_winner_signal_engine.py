@@ -1,4 +1,4 @@
-﻿from typing import List, Dict
+from typing import List, Dict
 from backend.app.engines.market_genetics_engine import load_genetics
 
 def _cap_conf(change: float, mult: float, max_conf: float) -> float:

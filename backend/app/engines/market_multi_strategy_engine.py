@@ -1,4 +1,4 @@
-﻿from typing import List, Dict
+from typing import List, Dict
 
 def momentum_strategy(item: Dict) -> Dict:
     change = float(item.get("change", 0))

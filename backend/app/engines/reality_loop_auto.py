@@ -1,4 +1,4 @@
-﻿from backend.app.engines.traffic_factory import run as traffic_run
+from backend.app.engines.traffic_factory import run as traffic_run
 from backend.app.engines.campaign_packager import run as campaign_run
 from backend.app.engines.signal_simulator import run as simulate_run
 from backend.app.engines.reality_bridge import run as ingest_run

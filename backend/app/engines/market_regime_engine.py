@@ -1,4 +1,4 @@
-﻿def detect_market_regime(change):
+def detect_market_regime(change):
     if change > 3:
         return "bull"
     elif change < -3:

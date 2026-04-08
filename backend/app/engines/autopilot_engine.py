@@ -1,4 +1,4 @@
-﻿from backend.app.engines.multi_target_manager import run as target_run
+from backend.app.engines.multi_target_manager import run as target_run
 from backend.app.engines.reality_loop import run as reality_run
 from backend.app.engines.scaling_engine import run as scaling_run
 from backend.app.engines.queue_manager import run as queue_run

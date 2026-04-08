@@ -1,4 +1,4 @@
-﻿from fastapi import APIRouter
+from fastapi import APIRouter
 from backend.app.engines.product_engine import run_product_engine
 
 router = APIRouter()

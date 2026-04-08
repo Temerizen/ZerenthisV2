@@ -1,4 +1,4 @@
-﻿from typing import Dict, List
+from typing import Dict, List
 from backend.app.engines.market_paper_engine import run_paper_trades
 from backend.app.engines.market_score_engine import score_trades
 

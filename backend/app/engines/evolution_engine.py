@@ -1,4 +1,4 @@
-﻿import os, json, random
+import os, json, random
 
 DATA_DIR = "backend/data"
 

@@ -1,1 +1,1 @@
-﻿from backend.app.routes.market import router
+from backend.app.routes.market import router

@@ -1,4 +1,4 @@
-﻿import json
+import json
 from pathlib import Path
 from backend.app.engines.target_engine import generate_targets
 

@@ -1,4 +1,4 @@
-﻿def apply_risk_controls(signal, portfolio):
+def apply_risk_controls(signal, portfolio):
     confidence = float(signal.get("confidence", 0))
     action = signal.get("action")
 

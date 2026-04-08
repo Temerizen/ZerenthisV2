@@ -1,4 +1,4 @@
-﻿from backend.app.engines.research_engine import run_research
+from backend.app.engines.research_engine import run_research
 
 def generate_targets():
     data = run_research()

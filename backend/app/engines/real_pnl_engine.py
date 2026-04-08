@@ -1,4 +1,4 @@
-﻿def calculate_real_pnl(action, entry_price, change_percent, position_size):
+def calculate_real_pnl(action, entry_price, change_percent, position_size):
     # convert % change to price movement
     move = change_percent / 100.0
 

@@ -1,4 +1,4 @@
-﻿import json, os, random
+import json, os, random
 
 DNA_PATH = "backend/data/strategy_dna.json"
 

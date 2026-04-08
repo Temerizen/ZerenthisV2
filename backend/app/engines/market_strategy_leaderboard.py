@@ -1,4 +1,4 @@
-﻿from pathlib import Path
+from pathlib import Path
 from typing import Dict, Any
 from backend.app.engines.state_guard import safe_load_json, safe_save_json, normalize_strategy_board, normalize_strategy_row
 

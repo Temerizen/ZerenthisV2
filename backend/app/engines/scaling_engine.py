@@ -1,4 +1,4 @@
-﻿import os, json, time
+import os, json, time
 
 from backend.app.engines.traffic_factory import run as traffic_run
 

@@ -1,4 +1,4 @@
-﻿from fastapi import APIRouter, Header, HTTPException
+from fastapi import APIRouter, Header, HTTPException
 from pydantic import BaseModel
 
 from backend.app.engines.market_access_engine import is_founder

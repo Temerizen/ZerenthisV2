@@ -1,4 +1,4 @@
-﻿import os, json, time
+import os, json, time
 from backend.app.engines.posting_bridge import run as prepare_run
 
 DATA_DIR = "backend/data"

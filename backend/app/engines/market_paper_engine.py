@@ -43,16 +43,7 @@ def run_paper_trades(signals: List[Dict], market_data: List[Dict], persist: bool
         balance = round(balance + pnl, 2)
 
         
-# === REAL_PROFIT_OVERRIDE ===
-from backend.app.engines.market_outcome_engine import simulate_market_outcome
 
-real_change = simulate_market_outcome(change)
-
-if action == "BUY":
-    profit = position_size * (real_change / 100)
-else:
-    profit = position_size * (-real_change / 100)
-# === END REAL_PROFIT_OVERRIDE ===
 
 trades.append({
             "asset": asset,

@@ -1,4 +1,4 @@
-﻿import os, json, time
+import os, json, time
 from backend.app.engines.reality_bridge import run as ingest_run
 
 DATA_DIR = "backend/data"

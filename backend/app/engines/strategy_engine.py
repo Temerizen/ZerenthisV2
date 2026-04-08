@@ -30,16 +30,7 @@ def run_strategy(name, market_data, dna, bias, portfolio):
 
         if trade:
             
-# === REAL_PROFIT_OVERRIDE ===
-from backend.app.engines.market_outcome_engine import simulate_market_outcome
 
-real_change = simulate_market_outcome(change)
-
-if action == "BUY":
-    profit = position_size * (real_change / 100)
-else:
-    profit = position_size * (-real_change / 100)
-# === END REAL_PROFIT_OVERRIDE ===
 
 trades.append(trade)
             profit = trade["profit"]

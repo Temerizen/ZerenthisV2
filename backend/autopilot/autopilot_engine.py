@@ -53,42 +53,42 @@ def get_active():
     lock = load_json(ACTIVE_LOCK_FILE, {})
     return lock.get("active_topic)
 
-log("ðŸ§  AUTOPILOT DIVERSITY MODE)
+log("Ã°Å¸Â§Â  AUTOPILOT DIVERSITY MODE)
 
 while True:
     try:
         ctrl = control_state()
         if ctrl.get("autopilot_paused", False):
-            log("â¸ paused by founder control)
+            log("Ã¢ÂÂ¸ paused by founder control)
             time.sleep(DELAY)
             continue
-        log("ðŸš€ expand); post("/api/topics/expand)
-        log("ðŸ— pipeline); post("/api/pipeline/build)
+        log("Ã°Å¸Å¡â‚¬ expand); post("/api/topics/expand)
+        log("Ã°Å¸Ââ€” pipeline); post("/api/pipeline/build)
 
         current = load_json(ACTIVE_CANDIDATE_FILE, {})
         if not current.get("topic):
-            log("ðŸ“ˆ promote (bootstrap))
+            log("Ã°Å¸â€œË† promote (bootstrap))
             post("/api/promote/active)
 
-        log("ðŸ”— sync); post("/api/active/sync)
-        log("âœ¨ polish); post("/api/polish/storefront)
-        log("ðŸ”— bind); post("/api/bind/products)
-        log("ðŸ§¾ bind UI); post("/api/bind/storefront)
-        log("ðŸŒ¿ diversity); diversity = post("/api/diversity/update)
-        log("ðŸ“Š performance); post("/api/performance/run)
-        log("âš”ï¸ battle); battle = post("/api/battle/run)
-        log("ðŸ“£ traffic convert); traffic = post("/api/traffic/convert)
-        log("ðŸ’° revenue); revenue = post("/api/revenue/update)
-        log("ðŸ“Š scaling); scaling = post("/api/scaling/update)
-        log("ðŸš€ amplify); amplify = run_amplify()
-        log("ðŸŽ¯ weight); weight = run_traffic_weighting()
-        log("âš–ï¸ split); split = run_dual_allocation()
-        log("ðŸ§­ founder); founder = run_founder_status()
-        log("ðŸ’¾ snapshot); snapshot = run_snapshot()
-        log("ðŸ§  intel); intel = run_intelligence()
-        log("ðŸ“¦ bundle); bundle = run_export_bundle()
-        log("ðŸ§± format); formatted = run_formatter()
-        log("ðŸš€ launch); launch = run_launch_ready_bundle()
+        log("Ã°Å¸â€â€” sync); post("/api/active/sync)
+        log("Ã¢Å“Â¨ polish); post("/api/polish/storefront)
+        log("Ã°Å¸â€â€” bind); post("/api/bind/products)
+        log("Ã°Å¸Â§Â¾ bind UI); post("/api/bind/storefront)
+        log("Ã°Å¸Å’Â¿ diversity); diversity = post("/api/diversity/update)
+        log("Ã°Å¸â€œÅ  performance); post("/api/performance/run)
+        log("Ã¢Å¡â€Ã¯Â¸Â battle); battle = post("/api/battle/run)
+        log("Ã°Å¸â€œÂ£ traffic convert); traffic = post("/api/traffic/convert)
+        log("Ã°Å¸â€™Â° revenue); revenue = post("/api/revenue/update)
+        log("Ã°Å¸â€œÅ  scaling); scaling = post("/api/scaling/update)
+        log("Ã°Å¸Å¡â‚¬ amplify); amplify = run_amplify()
+        log("Ã°Å¸Å½Â¯ weight); weight = run_traffic_weighting()
+        log("Ã¢Å¡â€“Ã¯Â¸Â split); split = run_dual_allocation()
+        log("Ã°Å¸Â§Â­ founder); founder = run_founder_status()
+        log("Ã°Å¸â€™Â¾ snapshot); snapshot = run_snapshot()
+        log("Ã°Å¸Â§Â  intel); intel = run_intelligence()
+        log("Ã°Å¸â€œÂ¦ bundle); bundle = run_export_bundle()
+        log("Ã°Å¸Â§Â± format); formatted = run_formatter()
+        log("Ã°Å¸Å¡â‚¬ launch); launch = run_launch_ready_bundle()
 
         active = get_active()
         decision = battle.get("decision", "unknown)
@@ -118,14 +118,14 @@ while True:
 
         append_jsonl(LOG_FILE, summary)
 
-        log(f"ðŸ ACTIVE: {active})
-        log(f"âš”ï¸ DECISION: {decision})
-        log(f"ðŸŒ¿ FATIGUE: {diversity.get('fatigue_penalty', 0)} | EXPLORE+: {diversity.get('exploration_boost', 0)})
-        log(f"ðŸ’µ LOOP SALES: {conversions} | LOOP REV: ${earned})
-        log(f"ðŸ¦ TRACKED SALES: {revenue.get('sales', 0)} | TRACKED REV: ${revenue.get('revenue', 0)})
+        log(f"Ã°Å¸ÂÂ ACTIVE: {active})
+        log(f"Ã¢Å¡â€Ã¯Â¸Â DECISION: {decision})
+        log(f"Ã°Å¸Å’Â¿ FATIGUE: {diversity.get('fatigue_penalty', 0)} | EXPLORE+: {diversity.get('exploration_boost', 0)})
+        log(f"Ã°Å¸â€™Âµ LOOP SALES: {conversions} | LOOP REV: ${earned})
+        log(f"Ã°Å¸ÂÂ¦ TRACKED SALES: {revenue.get('sales', 0)} | TRACKED REV: ${revenue.get('revenue', 0)})
 
     except Exception as e:
-        log(f"âŒ {e})
+        log(f"Ã¢ÂÅ’ {e})
 
     time.sleep(DELAY)
 

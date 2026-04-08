@@ -1,4 +1,4 @@
-﻿import json, os, time
+import json, os, time
 
 DATA_DIR = "backend/data"
 

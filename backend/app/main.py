@@ -1,4 +1,4 @@
-﻿from fastapi import FastAPI
+from fastapi import FastAPI
 from backend.app.routes import intelligence
 from fastapi.middleware.cors import CORSMiddleware
 from backend.app.routes.phase_verify import router as phase_verify_router

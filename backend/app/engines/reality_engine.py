@@ -1,4 +1,4 @@
-﻿import random
+import random
 
 def apply_execution_reality(position_size, change_percent):
     fee_rate = 0.001

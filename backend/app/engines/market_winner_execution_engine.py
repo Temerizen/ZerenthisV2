@@ -1,4 +1,4 @@
-﻿from backend.app.engines.market_strategy_competition import run_strategies
+from backend.app.engines.market_strategy_competition import run_strategies
 from backend.app.engines.market_winner_signal_engine import build_signals_for_strategy
 from backend.app.engines.market_data_engine import scan_market
 from backend.app.engines.market_paper_engine import run_paper_trades

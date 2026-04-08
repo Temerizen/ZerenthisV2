@@ -1,4 +1,4 @@
-﻿from .queue import get_job
+from .queue import get_job
 
 def process_job(job_id):
     job = get_job(job_id)

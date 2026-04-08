@@ -1,4 +1,4 @@
-﻿jobs = []
+jobs = []
 
 def add_job(job):
     jobs.append(job)

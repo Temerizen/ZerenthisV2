@@ -1,4 +1,4 @@
-﻿from typing import List, Dict
+from typing import List, Dict
 from backend.app.engines.market_memory_engine import load_memory
 
 def generate_signals(market_data: List[Dict]):

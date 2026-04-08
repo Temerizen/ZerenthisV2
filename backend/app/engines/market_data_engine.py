@@ -1,4 +1,4 @@
-﻿import requests, time
+import requests, time
 
 CRYPTO_ASSETS = ["bitcoin","ethereum","solana"]
 STOCK_ASSETS = ["NVDA","TSLA","MSFT","SPY"]

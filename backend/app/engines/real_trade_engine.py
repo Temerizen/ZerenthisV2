@@ -1,4 +1,4 @@
-﻿def execute_trade(signal, portfolio):
+def execute_trade(signal, portfolio):
     if signal["action"] == "HOLD":
         return None
 

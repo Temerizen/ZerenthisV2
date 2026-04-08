@@ -1,4 +1,4 @@
-﻿import os, json, time, glob
+import os, json, time, glob
 
 DATA_DIR = "backend/data"
 OUT_DIR = "backend/outputs"

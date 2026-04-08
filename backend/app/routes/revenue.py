@@ -1,4 +1,4 @@
-﻿from fastapi import APIRouter
+from fastapi import APIRouter
 from backend.app.routes.full_cycle import full_cycle
 from backend.app.engines.store_engine import build_store
 from backend.app.engines.traffic_engine import run_traffic_engine

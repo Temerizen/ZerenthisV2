@@ -1,4 +1,4 @@
-﻿from pathlib import Path
+from pathlib import Path
 import json
 from fastapi import APIRouter
 from backend.app.engines.intelligence_priority_engine import run_priority_engine

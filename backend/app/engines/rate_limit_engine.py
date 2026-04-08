@@ -1,4 +1,4 @@
-﻿import time
+import time
 
 LAST_CALL = 0
 MIN_DELAY = 5

@@ -1,4 +1,4 @@
-﻿import json, os
+import json, os
 from datetime import datetime
 
 MEMORY_PATH = "backend/data/market_memory.json"

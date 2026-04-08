@@ -1,4 +1,4 @@
-﻿import os, json
+import os, json
 
 DATA_DIR = "backend/data"
 OUT_DIR = "backend/outputs"

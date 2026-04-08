@@ -1,4 +1,4 @@
-﻿import random
+import random
 
 def run_conversion_engine(visitors):
     conversions = int(visitors * random.uniform(0.01, 0.08))

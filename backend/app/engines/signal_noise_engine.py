@@ -1,4 +1,4 @@
-﻿import random
+import random
 
 def apply_signal_noise(confidence):
     # degrade confidence randomly
