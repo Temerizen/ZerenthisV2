@@ -9,3 +9,7 @@ build/
 *.log
 backend/data/
 backend/outputs/
+*.bak
+*.bak_*
+*.tmp
+*.old
