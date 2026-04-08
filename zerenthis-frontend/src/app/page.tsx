@@ -1,3 +1,5 @@
+
+<a href='/founder/market' style='color:cyan'>Founder Market</a>
 "use client";
 
 import { useEffect } from "react";
@@ -12,3 +14,4 @@ export default function Home() {
 
   return null;
 }
+

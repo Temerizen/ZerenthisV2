@@ -1,18 +1,18 @@
-from fastapi import APIRouter
-from backend.app.engines.intelligence_engine import generate_topic, simulate
-from backend.app.engines.memory_engine import is_duplicate, remember
-from backend.app.engines.evolution_engine import evolve_topic
+﻿from fastapi import APIRouter
+from backend.app.engines.decision_engine import decide, get_current_topic
+from backend.app.engines.target_engine import generate_targets
 
 router = APIRouter()
 
 @router.post("/intelligence/run")
 def run_intelligence():
-    topic = generate_topic()
+    return decide()
 
-    if is_duplicate(topic):
-        topic = evolve_topic(topic)
+@router.get("/intelligence/targets")
+def get_targets():
+    return generate_targets()
 
-    result = simulate(topic)
-    remember(topic)
-    return result
-
+@router.get("/intelligence/current")
+def current():
+    topic = get_current_topic()
+    return {"current_topic": topic}

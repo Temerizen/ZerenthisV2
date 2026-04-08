@@ -1,4 +1,5 @@
 ﻿from fastapi import FastAPI
+from backend.app.routes import intelligence
 from fastapi.middleware.cors import CORSMiddleware
 from backend.app.routes.phase_verify import router as phase_verify_router
 from backend.app.routes.phase_lock import router as phase_lock_router
@@ -26,6 +27,7 @@ from backend.app.routes.full_cycle import router as full_cycle_router
 from backend.app.routes.revenue import router as revenue_router
 
 app = FastAPI()
+app.include_router(intelligence.router, prefix="/api")
 
 app.add_middleware(
     CORSMiddleware,
@@ -82,5 +84,10 @@ def health():
 
 
 
+
+
+
+from backend.app.routes import market
+app.include_router(market.router, prefix="/api")
 
 
