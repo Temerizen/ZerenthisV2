@@ -1,4 +1,5 @@
 ﻿from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from backend.app.routes.phase_verify import router as phase_verify_router
 from backend.app.routes.phase_lock import router as phase_lock_router
 from backend.app.routes.multi_target_manager import router as multi_target_manager_router
@@ -25,6 +26,17 @@ from backend.app.routes.full_cycle import router as full_cycle_router
 from backend.app.routes.revenue import router as revenue_router
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 app.include_router(phase_verify_router)
 app.include_router(phase_lock_router)
 app.include_router(multi_target_manager_router)
@@ -54,6 +66,7 @@ app.include_router(revenue_router)
 @app.get("/health")
 def health():
     return {"status": "ok"}
+
 
 
 

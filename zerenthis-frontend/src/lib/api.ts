@@ -1,103 +1,64 @@
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000";
+﻿export const API_BASE = "http://127.0.0.1:8000";
 
-async function safeJson(path: string, options?: RequestInit) {
-  try {
-    const res = await fetch(`${BASE_URL}${path}`, {
-      cache: "no-store",
-      ...options,
-    });
+export async function apiFetch(path: string, options: RequestInit = {}) {
+  const res = await fetch(`${API_BASE}${path}`, {
+    ...options,
+    headers: {
+      "Content-Type": "application/json",
+      ...(options.headers || {}),
+    },
+  });
 
+  if (!res.ok) {
     const text = await res.text();
-    try {
-      return JSON.parse(text);
-    } catch {
-      return { ok: res.ok, status: res.status, raw: text, path };
-    }
-  } catch (error: any) {
-    return {
-      error: true,
-      message: error?.message || "Request failed",
-      path,
-    };
+    throw new Error(`API Error ${res.status}: ${text}`);
   }
+
+  return res.json();
 }
 
-export async function getHealth() {
-  return safeJson("/health");
-}
+// SYSTEM
+export const getHealth = () => apiFetch("/health");
+export const getPhaseVerify = () => apiFetch("/api/phase/verify");
 
-export async function runAutopilot() {
-  return safeJson("/api/autopilot/run", {
-    method: "POST",
-  });
-}
+// TARGETS
+export const getTargets = () =>
+  apiFetch("/api/targets/rank", { method: "POST" });
 
-export async function getTargets() {
-  return safeJson("/api/targets/rank", {
-    method: "POST",
-  });
-}
+// AUTOPILOT
+export const runAutopilot = () =>
+  apiFetch("/api/autopilot/run", { method: "POST" });
 
-export async function getPhaseVerify() {
-  return safeJson("/api/phase/verify");
-}
+// POSTING
+export const runPostingPlan = () =>
+  apiFetch("/api/posting/plan", { method: "POST" });
 
-export async function runPostingPlan() {
-  return safeJson("/api/posting/plan", {
-    method: "POST",
-  });
-}
+export const runPostingPrepare = () =>
+  apiFetch("/api/posting/prepare", { method: "POST" });
 
-export async function runPostingPrepare() {
-  return safeJson("/api/posting/prepare", {
-    method: "POST",
-  });
-}
+export const runPostingExecute = () =>
+  apiFetch("/api/posting/execute", { method: "POST" });
 
-export async function runPostingExecute() {
-  return safeJson("/api/posting/execute", {
-    method: "POST",
-  });
-}
+export const getPostingResult = () =>
+  apiFetch("/api/posting/result", { method: "POST" });
 
-export async function getPostingResult() {
-  return safeJson("/api/posting/result", {
-    method: "POST",
-  });
-}
+// REALITY
+export const runRealityLoop = () =>
+  apiFetch("/api/reality/loop", { method: "POST" });
 
-export async function runRealityLoop() {
-  return safeJson("/api/reality/loop", {
-    method: "POST",
-  });
-}
+export const runRealityAutoLoop = () =>
+  apiFetch("/api/reality/auto-loop", { method: "POST" });
 
-export async function runRealityAutoLoop() {
-  return safeJson("/api/reality/auto-loop", {
-    method: "POST",
-  });
-}
+export const runRealityExport = () =>
+  apiFetch("/api/reality/export", { method: "POST" });
 
-export async function runRealityExport() {
-  return safeJson("/api/reality/export", {
-    method: "POST",
-  });
-}
+// SCALE
+export const runScale = () =>
+  apiFetch("/api/scale/run", { method: "POST" });
 
-export async function runScale() {
-  return safeJson("/api/scale/run", {
-    method: "POST",
-  });
-}
+// TRAFFIC
+export const runTrafficReal = () =>
+  apiFetch("/api/traffic/real", { method: "POST" });
 
-export async function runTrafficReal() {
-  return safeJson("/api/traffic/real", {
-    method: "POST",
-  });
-}
-
-export async function runTrafficBridge() {
-  return safeJson("/api/traffic/bridge", {
-    method: "POST",
-  });
-}
+export const runTrafficBridge = () =>
+  apiFetch("/api/traffic/bridge", { method: "POST" });
