@@ -1,30 +1,13 @@
-﻿import json
-from pathlib import Path
-from typing import Any, Dict
+﻿from pathlib import Path
+from typing import Dict, Any
+from backend.app.engines.state_guard import safe_load_json, safe_save_json, normalize_market_state
 
 DATA_DIR = Path("backend/data/market")
-STATE_FILE = DATA_DIR / "latest_run.json"
-
-DEFAULT_STATE: Dict[str, Any] = {
-    "status": "idle",
-    "scan": [],
-    "signals": [],
-    "trades": [],
-    "score": {},
-    "updated_at": None,
-}
+STATE_FILE = DATA_DIR / "state.json"
 
 def load_market_state() -> Dict[str, Any]:
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    if STATE_FILE.exists():
-        try:
-            return json.loads(STATE_FILE.read_text(encoding="utf-8-sig"))
-        except Exception:
-            return DEFAULT_STATE.copy()
-    return DEFAULT_STATE.copy()
+    return normalize_market_state(safe_load_json(STATE_FILE, {}))
 
 def save_market_state(state: Dict[str, Any]) -> Dict[str, Any]:
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    STATE_FILE.write_text(json.dumps(state, indent=2), encoding="utf-8-sig")
-    return state
-
+    clean = normalize_market_state(state)
+    return safe_save_json(STATE_FILE, clean)
