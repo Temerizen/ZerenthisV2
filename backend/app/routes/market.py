@@ -1,18 +1,18 @@
 ﻿from datetime import datetime, timezone
-from fastapi import APIRouter, Header
+from fastapi import APIRouter, Header, HTTPException
 from pydantic import BaseModel
 
 from backend.app.engines.market_access_engine import is_founder
-from backend.app.engines.strategy_engine import run_strategies
 from backend.app.engines.market_data_engine import scan_market
+from backend.app.engines.market_memory_engine import update_memory
 from backend.app.engines.market_paper_engine import run_paper_trades
 from backend.app.engines.market_portfolio_engine import load_portfolio, reset_portfolio
 from backend.app.engines.market_score_engine import score_trades
 from backend.app.engines.market_state_engine import load_market_state, save_market_state
-from backend.app.engines.market_strategy_engine import generate_signals
-from backend.app.engines.market_multi_strategy_engine import generate_multi_signals
-from backend.app.engines.market_strategy_competition_engine import evaluate_strategies
-from backend.app.engines.market_strategy_leaderboard import load_leaderboard, update_competition_results
+from backend.app.engines.market_strategy_competition import run_strategies
+from backend.app.engines.market_strategy_leaderboard import update_strategy_board, load_strategy_board
+from backend.app.engines.market_winner_signal_engine import build_signals_for_strategy
+from backend.app.engines.market_genetics_engine import load_genetics, evolve_genetics
 
 router = APIRouter()
 
@@ -20,80 +20,172 @@ class PortfolioResetRequest(BaseModel):
     starting_balance: float = 50.0
     risk_per_trade: float = 0.10
 
-def _now_iso() -> str:
+def _now_iso():
     return datetime.now(timezone.utc).isoformat()
 
-@router.get("/market/latest")
-def market_latest():
-    state = load_market_state()
-    state["portfolio"] = load_portfolio()
-    state["leaderboard"] = load_leaderboard()
-    return state
+@router.post("/founder/market/reset-portfolio")
+def founder_market_reset_portfolio(payload: PortfolioResetRequest, x_api_key: str = Header(None)):
+    if not is_founder(x_api_key):
+        raise HTTPException(status_code=401, detail="unauthorized")
+    try:
+        return reset_portfolio(payload.starting_balance, payload.risk_per_trade)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"reset_portfolio_failed: {e}")
 
-@router.get("/market/leaderboard")
-def market_leaderboard():
-    return load_leaderboard()
+@router.post("/founder/market/strategy-run")
+def founder_market_strategy_run(x_api_key: str = Header(None)):
+    if not is_founder(x_api_key):
+        raise HTTPException(status_code=401, detail="unauthorized")
+
+    data = scan_market()
+    results = run_strategies(data)
+    board = update_strategy_board(results["strategies"], results["best_strategy"])
+    genetics = evolve_genetics(board, load_genetics())
+
+    return {
+        "status": "strategy_cycle_complete",
+        "scan": data,
+        "results": results,
+        "strategy_board": board,
+        "genetics": genetics,
+        "timestamp": _now_iso()
+    }
+
+@router.post("/founder/market/run")
+def founder_market_run(x_api_key: str = Header(None)):
+    if not is_founder(x_api_key):
+        raise HTTPException(status_code=401, detail="unauthorized")
+
+    try:
+        data = scan_market()
+
+        strategy_results = run_strategies(data)
+        best_strategy = strategy_results["best_strategy"]
+        strategy_board = update_strategy_board(strategy_results["strategies"], best_strategy)
+        genetics = evolve_genetics(strategy_board, load_genetics())
+
+        signals = build_signals_for_strategy(best_strategy, data)
+        trades = run_paper_trades(signals, data)
+        score = score_trades(trades)
+        memory = update_memory(trades)
+        portfolio = load_portfolio()
+
+        state = {
+            "status": "full_cycle_complete",
+            "best_strategy": best_strategy,
+            "strategy_results": strategy_results,
+            "strategy_board": strategy_board,
+            "genetics": genetics,
+            "scan": data,
+            "signals": signals,
+            "trades": trades,
+            "score": score,
+            "memory": memory,
+            "portfolio": portfolio,
+            "updated_at": _now_iso(),
+        }
+
+        save_market_state(state)
+        return state
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"founder_market_run_failed: {e}")
 
 @router.get("/market/portfolio")
 def market_portfolio():
     return load_portfolio()
 
-@router.post("/founder/market/reset-portfolio")
-def founder_market_reset_portfolio(payload: PortfolioResetRequest, x_api_key: str = Header(None)):
-    if not is_founder(x_api_key):
-            strategy_output = run_strategies(data, LAST_RUN.get("portfolio", {"balance":1000}))
-    LAST_RUN["strategy"] = strategy_output
+@router.get("/market/performance")
+def market_performance():
+    state = load_market_state()
+    return {
+        "score": state.get("score", {}),
+        "portfolio": load_portfolio(),
+        "best_strategy": state.get("best_strategy"),
+        "updated_at": state.get("updated_at")
+    }
 
-    return {"error": "unauthorized"}
-    return reset_portfolio(payload.starting_balance, payload.risk_per_trade)
+@router.get("/market/strategy-board")
+def market_strategy_board():
+    return load_strategy_board()
 
-@router.post("/founder/market/run")
-def founder_market_run(x_api_key: str = Header(None)):
-    if not is_founder(x_api_key):
-            strategy_output = run_strategies(data, LAST_RUN.get("portfolio", {"balance":1000}))
-    LAST_RUN["strategy"] = strategy_output
+@router.get("/market/latest")
+def market_latest():
+    return load_market_state()
 
-    return {"error": "unauthorized"}
+@router.get("/market/genetics")
+def market_genetics():
+    return load_genetics()
 
+@router.post("/market/scan")
+def market_scan():
+    state = load_market_state()
     data = scan_market()
-    multi = generate_multi_signals(data)
+    state["status"] = "scanned"
+    state["scan"] = data
+    state["updated_at"] = _now_iso()
+    save_market_state(state)
+    return {"data": data}
 
-    competition = evaluate_strategies(multi, data)
-    best_strategy = competition["best_strategy"]
-    results = competition["results"]
+@router.post("/market/signal-run")
+def market_signal_run():
+    state = load_market_state()
+    data = state.get("scan", [])
+    if not data:
+        data = scan_market()
+        state["scan"] = data
 
-    winning_raw_signals = results[best_strategy]["signals"]
-    adapted_signals = generate_signals(data)
-    adapted_map = {s["asset"]: s for s in adapted_signals}
+    strategy_results = run_strategies(data)
+    best_strategy = strategy_results["best_strategy"]
+    signals = build_signals_for_strategy(best_strategy, data)
 
-    selected_signals = []
-    for s in winning_raw_signals:
-        asset = s["asset"]
-        merged = {
-            **s,
-            "confidence": adapted_map.get(asset, {}).get("confidence", abs(float(s.get("change", 0)))),
-            "bias": adapted_map.get(asset, {}).get("bias", 1.0),
-        }
-        selected_signals.append(merged)
+    state["status"] = "signaled"
+    state["best_strategy"] = best_strategy
+    state["signals"] = signals
+    state["updated_at"] = _now_iso()
+    save_market_state(state)
+    return {
+        "best_strategy": best_strategy,
+        "signals": signals
+    }
 
-    trades = run_paper_trades(selected_signals, data, persist=True)
+@router.post("/market/paper-run")
+def market_paper_run():
+    state = load_market_state()
+    data = state.get("scan", [])
+    if not data:
+        data = scan_market()
+        state["scan"] = data
+
+    strategy_results = run_strategies(data)
+    best_strategy = strategy_results["best_strategy"]
+    strategy_board = update_strategy_board(strategy_results["strategies"], best_strategy)
+    genetics = evolve_genetics(strategy_board, load_genetics())
+    signals = build_signals_for_strategy(best_strategy, data)
+
+    trades = run_paper_trades(signals, data)
     score = score_trades(trades)
+    memory = update_memory(trades)
     portfolio = load_portfolio()
-    leaderboard = update_competition_results(results, best_strategy)
 
-    state = {
-        "status": "full_cycle_complete",
-        "active_strategy": best_strategy,
-        "scan": data,
-        "multi_signals": multi,
-        "competition_results": results,
-        "signals": selected_signals,
+    state["status"] = "paper_complete"
+    state["best_strategy"] = best_strategy
+    state["strategy_results"] = strategy_results
+    state["strategy_board"] = strategy_board
+    state["genetics"] = genetics
+    state["signals"] = signals
+    state["trades"] = trades
+    state["score"] = score
+    state["memory"] = memory
+    state["portfolio"] = portfolio
+    state["updated_at"] = _now_iso()
+    save_market_state(state)
+
+    return {
+        "best_strategy": best_strategy,
         "trades": trades,
         "score": score,
-        "portfolio": portfolio,
-        "leaderboard": leaderboard,
-        "updated_at": _now_iso(),
+        "memory": memory,
+        "genetics": genetics,
+        "portfolio": portfolio
     }
-    save_market_state(state)
-    return state
-

@@ -3,48 +3,64 @@ from pathlib import Path
 from typing import Dict, Any
 
 DATA_DIR = Path("backend/data/market")
-FILE = DATA_DIR / "strategy_leaderboard.json"
+LEADERBOARD_FILE = DATA_DIR / "strategy_leaderboard.json"
 
-DEFAULT = {
-    "strategies": {
-        "momentum": {"wins": 0, "losses": 0, "pnl": 0.0, "cycles_won": 0},
-        "reversal": {"wins": 0, "losses": 0, "pnl": 0.0, "cycles_won": 0},
-        "conservative": {"wins": 0, "losses": 0, "pnl": 0.0, "cycles_won": 0}
-    },
-    "active_strategy": "momentum"
+DEFAULT_BOARD = {
+    "strategies": {},
+    "last_best_strategy": None
 }
 
-def load_leaderboard() -> Dict[str, Any]:
+def _clean_row(row: Dict[str, Any]) -> Dict[str, Any]:
+    row = row or {}
+    return {
+        "runs": int(row.get("runs", 0) or 0),
+        "total_profit": float(row.get("total_profit", 0.0) or 0.0),
+        "total_trades": int(row.get("total_trades", 0) or 0),
+        "wins": int(row.get("wins", 0) or 0),
+        "losses": int(row.get("losses", 0) or 0),
+        "last_profit": float(row.get("last_profit", 0.0) or 0.0),
+        "avg_profit": float(row.get("avg_profit", 0.0) or 0.0),
+        "avg_winrate": float(row.get("avg_winrate", 0.0) or 0.0),
+    }
+
+def load_strategy_board() -> Dict[str, Any]:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    if FILE.exists():
+    if LEADERBOARD_FILE.exists():
         try:
-            return json.loads(FILE.read_text(encoding="utf-8"))
+            raw = json.loads(LEADERBOARD_FILE.read_text(encoding="utf-8"))
+            board = {
+                "strategies": {},
+                "last_best_strategy": raw.get("last_best_strategy")
+            }
+            for name, row in (raw.get("strategies", {}) or {}).items():
+                board["strategies"][name] = _clean_row(row)
+            return board
         except Exception:
-            return DEFAULT.copy()
-    return DEFAULT.copy()
+            return DEFAULT_BOARD.copy()
+    return DEFAULT_BOARD.copy()
 
-def save_leaderboard(data: Dict[str, Any]):
+def save_strategy_board(board: Dict[str, Any]):
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    FILE.write_text(json.dumps(data, indent=2), encoding="utf-8")
+    LEADERBOARD_FILE.write_text(json.dumps(board, indent=2), encoding="utf-8")
 
-def update_competition_results(results: Dict[str, Any], best_strategy: str):
-    board = load_leaderboard()
+def update_strategy_board(results: Dict[str, Any], best_strategy: str):
+    board = load_strategy_board()
 
-    for strategy_name, payload in results.items():
-        if strategy_name not in board["strategies"]:
-            board["strategies"][strategy_name] = {"wins": 0, "losses": 0, "pnl": 0.0, "cycles_won": 0}
+    for name, stats in (results or {}).items():
+        row = _clean_row(board["strategies"].get(name, {}))
 
-        score = payload.get("score", {})
-        pnl = float(score.get("total_profit", 0))
-        wins = int(score.get("wins", 0))
-        losses = int(score.get("losses", 0))
+        row["runs"] += 1
+        row["total_profit"] += float(stats.get("profit", 0) or 0)
+        row["total_trades"] += int(stats.get("trades", 0) or 0)
+        row["wins"] += int(stats.get("wins", 0) or 0)
+        row["losses"] += int(stats.get("losses", 0) or 0)
+        row["last_profit"] = float(stats.get("profit", 0) or 0)
+        row["avg_profit"] = round(row["total_profit"] / max(row["runs"], 1), 4)
+        row["avg_winrate"] = round((row["wins"] / max(row["total_trades"], 1)) * 100, 2)
 
-        board["strategies"][strategy_name]["wins"] += wins
-        board["strategies"][strategy_name]["losses"] += losses
-        board["strategies"][strategy_name]["pnl"] = round(board["strategies"][strategy_name]["pnl"] + pnl, 2)
+        board["strategies"][name] = row
 
-    board["strategies"][best_strategy]["cycles_won"] += 1
-    board["active_strategy"] = best_strategy
-
-    save_leaderboard(board)
+    board["last_best_strategy"] = best_strategy
+    save_strategy_board(board)
     return board
+
