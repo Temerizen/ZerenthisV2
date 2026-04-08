@@ -1,20 +1,42 @@
-﻿export const API_BASE = "http://127.0.0.1:8000";
+export const API_BASE = "http://127.0.0.1:8000";
 
 export async function apiFetch(path: string, options: RequestInit = {}) {
-  const res = await fetch(`${API_BASE}${path}`, {
-    ...options,
-    headers: {
-      "Content-Type": "application/json",
-      ...(options.headers || {}),
-    },
-  });
+  try {
+    const res = await fetch(`${API_BASE}${path}`, {
+      ...options,
+      headers: {
+        "Content-Type": "application/json",
+        ...(options.headers || {}),
+      },
+      cache: "no-store",
+    });
 
-  if (!res.ok) {
     const text = await res.text();
-    throw new Error(`API Error ${res.status}: ${text}`);
-  }
 
-  return res.json();
+    let parsed: any = null;
+    try {
+      parsed = text ? JSON.parse(text) : {};
+    } catch {
+      parsed = { raw: text };
+    }
+
+    if (!res.ok) {
+      return {
+        error: true,
+        status: res.status,
+        path,
+        ...parsed,
+      };
+    }
+
+    return parsed;
+  } catch (error: any) {
+    return {
+      error: true,
+      path,
+      message: error?.message || "Failed to fetch",
+    };
+  }
 }
 
 // SYSTEM
