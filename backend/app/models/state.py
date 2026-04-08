@@ -1,9 +1,15 @@
-DEFAULT_STATE = {
-    "ideas": [],
-    "winners": [],
-    "jobs": []
-}
-
+DEFAULT_STATE = {
+
+    "ideas": [],
+
+    "winners": [],
+
+    "jobs": []
+
+}
+
+
+
 
 
 

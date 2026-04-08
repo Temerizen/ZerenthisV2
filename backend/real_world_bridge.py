@@ -1,7 +1,7 @@
 import json, time
 from pathlib import Path
 
-ROOT = Path("C:/ZerenthisV2/backend)
+ROOT = Path("C:/ZerenthisV2/backend")
 OUT = ROOT / "real_world"OUT.mkdir(exist_ok=True)
 
 ACTIVE_FILE = ROOT / "data" / "active_candidate.json"
@@ -47,7 +47,8 @@ def loop():
 
 if __name__ == "__main__":
     log("REAL WORLD BRIDGE CONTINUOUS MODE)
-    loop()
+    loop()
+
 
 
 
