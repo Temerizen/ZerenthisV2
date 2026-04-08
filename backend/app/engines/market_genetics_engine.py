@@ -20,14 +20,14 @@ def load_genetics() -> Dict[str, Any]:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     if GENETICS_FILE.exists():
         try:
-            return json.loads(GENETICS_FILE.read_text(encoding="utf-8"))
+            return json.loads(GENETICS_FILE.read_text(encoding="utf-8-sig"))
         except Exception:
             return DEFAULT_GENETICS.copy()
     return DEFAULT_GENETICS.copy()
 
 def save_genetics(genetics: Dict[str, Any]):
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    GENETICS_FILE.write_text(json.dumps(genetics, indent=2), encoding="utf-8")
+    GENETICS_FILE.write_text(json.dumps(genetics, indent=2), encoding="utf-8-sig")
 
 def mutate_value(v: float, strength: float = 0.15, lo: float = 0.25, hi: float = 15.0) -> float:
     delta = random.uniform(-strength, strength) * max(abs(v), 1.0)
@@ -74,3 +74,4 @@ def evolve_genetics(strategy_board: Dict[str, Any], genetics: Dict[str, Any]):
 
     save_genetics(genetics)
     return genetics
+

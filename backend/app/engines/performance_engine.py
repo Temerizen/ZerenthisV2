@@ -4,17 +4,28 @@ BASE = os.path.join(os.getcwd(), "backend", "data")
 PERF_FILE = os.path.join(BASE, "performance.json")
 
 def update_performance(balance):
+    os.makedirs(BASE, exist_ok=True)
+
+    data = {}
     if os.path.exists(PERF_FILE):
-        data = json.load(open(PERF_FILE,"r",encoding="utf-8"))
-    else:
-        data = {"equity_curve":[]}
+        try:
+            with open(PERF_FILE, "r", encoding="utf-8-sig") as f:
+                data = json.load(f)
+        except Exception:
+            data = {}
 
-    data["equity_curve"].append(balance)
+    equity_curve = data.get("equity_curve", [])
+    if not isinstance(equity_curve, list):
+        equity_curve = []
 
-    peak = max(data["equity_curve"])
-    drawdown = round((peak - balance)/peak,4) if peak else 0
+    equity_curve.append(float(balance))
+    data["equity_curve"] = equity_curve
 
-    data["max_drawdown"] = max(data.get("max_drawdown",0), drawdown)
+    peak = max(equity_curve) if equity_curve else float(balance)
+    drawdown = round((peak - float(balance)) / peak, 4) if peak else 0.0
+    data["max_drawdown"] = max(float(data.get("max_drawdown", 0.0) or 0.0), drawdown)
 
-    json.dump(data, open(PERF_FILE,"w",encoding="utf-8"), indent=2)
+    with open(PERF_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
     return data

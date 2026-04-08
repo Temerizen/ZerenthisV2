@@ -6,13 +6,13 @@ HISTORY_FILE = os.path.join(BASE, "trades_history.json")
 def load_history():
     if not os.path.exists(HISTORY_FILE):
         return []
-    return json.load(open(HISTORY_FILE, "r", encoding="utf-8"))
+    return json.load(open(HISTORY_FILE, "r", encoding="utf-8-sig"))
 
 def save_trade(trade):
     history = load_history()
     trade["logged_at"] = int(time.time())
     history.append(trade)
-    json.dump(history, open(HISTORY_FILE, "w", encoding="utf-8"), indent=2)
+    json.dump(history, open(HISTORY_FILE, "w", encoding="utf-8-sig"), indent=2)
 
 def get_stats():
     history = load_history()
@@ -30,3 +30,4 @@ def get_stats():
         "losses": losses,
         "winrate": round((wins/max(1,len(history)))*100,2)
     }
+

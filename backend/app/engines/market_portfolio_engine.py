@@ -24,7 +24,7 @@ def load_portfolio() -> Dict[str, Any]:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     if PORTFOLIO_FILE.exists():
         try:
-            raw = json.loads(PORTFOLIO_FILE.read_text(encoding="utf-8"))
+            raw = json.loads(PORTFOLIO_FILE.read_text(encoding="utf-8-sig"))
             return {
                 "starting_balance": _safe_float(raw.get("starting_balance", 50.0), 50.0),
                 "balance": _safe_float(raw.get("balance", 50.0), 50.0),
@@ -47,7 +47,7 @@ def save_portfolio(portfolio: Dict[str, Any]) -> Dict[str, Any]:
         "last_run_trades": portfolio.get("last_run_trades", []) or [],
         "equity_curve": portfolio.get("equity_curve", [50.0]) or [50.0],
     }
-    PORTFOLIO_FILE.write_text(json.dumps(clean, indent=2), encoding="utf-8")
+    PORTFOLIO_FILE.write_text(json.dumps(clean, indent=2), encoding="utf-8-sig")
     return clean
 
 def reset_portfolio(starting_balance: float = 50.0, risk_per_trade: float = 0.10) -> Dict[str, Any]:
@@ -63,3 +63,4 @@ def reset_portfolio(starting_balance: float = 50.0, risk_per_trade: float = 0.10
         "equity_curve": [starting_balance]
     }
     return save_portfolio(portfolio)
+

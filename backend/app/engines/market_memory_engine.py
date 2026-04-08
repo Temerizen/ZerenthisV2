@@ -14,14 +14,14 @@ def load_memory() -> Dict[str, Any]:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     if MEMORY_FILE.exists():
         try:
-            return json.loads(MEMORY_FILE.read_text(encoding="utf-8"))
+            return json.loads(MEMORY_FILE.read_text(encoding="utf-8-sig"))
         except Exception:
             return DEFAULT_MEMORY.copy()
     return DEFAULT_MEMORY.copy()
 
 def save_memory(memory: Dict[str, Any]):
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    MEMORY_FILE.write_text(json.dumps(memory, indent=2), encoding="utf-8")
+    MEMORY_FILE.write_text(json.dumps(memory, indent=2), encoding="utf-8-sig")
 
 def update_memory(trades):
     memory = load_memory()
@@ -47,3 +47,4 @@ def update_memory(trades):
 
     save_memory(memory)
     return memory
+

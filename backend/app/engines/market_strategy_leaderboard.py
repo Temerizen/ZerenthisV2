@@ -27,7 +27,7 @@ def load_strategy_board() -> Dict[str, Any]:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     if LEADERBOARD_FILE.exists():
         try:
-            raw = json.loads(LEADERBOARD_FILE.read_text(encoding="utf-8"))
+            raw = json.loads(LEADERBOARD_FILE.read_text(encoding="utf-8-sig"))
             board = {
                 "strategies": {},
                 "last_best_strategy": raw.get("last_best_strategy")
@@ -41,14 +41,13 @@ def load_strategy_board() -> Dict[str, Any]:
 
 def save_strategy_board(board: Dict[str, Any]):
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    LEADERBOARD_FILE.write_text(json.dumps(board, indent=2), encoding="utf-8")
+    LEADERBOARD_FILE.write_text(json.dumps(board, indent=2), encoding="utf-8-sig")
 
 def update_strategy_board(results: Dict[str, Any], best_strategy: str):
     board = load_strategy_board()
 
     for name, stats in (results or {}).items():
         row = _clean_row(board["strategies"].get(name, {}))
-
         row["runs"] += 1
         row["total_profit"] += float(stats.get("profit", 0) or 0)
         row["total_trades"] += int(stats.get("trades", 0) or 0)
@@ -57,7 +56,6 @@ def update_strategy_board(results: Dict[str, Any], best_strategy: str):
         row["last_profit"] = float(stats.get("profit", 0) or 0)
         row["avg_profit"] = round(row["total_profit"] / max(row["runs"], 1), 4)
         row["avg_winrate"] = round((row["wins"] / max(row["total_trades"], 1)) * 100, 2)
-
         board["strategies"][name] = row
 
     board["last_best_strategy"] = best_strategy
