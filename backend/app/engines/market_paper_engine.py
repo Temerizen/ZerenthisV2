@@ -1,4 +1,4 @@
-﻿from typing import List, Dict
+from typing import List, Dict
 from copy import deepcopy
 from backend.app.engines.market_portfolio_engine import load_portfolio, save_portfolio
 from backend.app.engines.market_adaptation_engine import update_stats
@@ -42,7 +42,19 @@ def run_paper_trades(signals: List[Dict], market_data: List[Dict], persist: bool
         pnl = round(pnl, 2)
         balance = round(balance + pnl, 2)
 
-        trades.append({
+        
+# === REAL_PROFIT_OVERRIDE ===
+from backend.app.engines.market_outcome_engine import simulate_market_outcome
+
+real_change = simulate_market_outcome(change)
+
+if action == "BUY":
+    profit = position_size * (real_change / 100)
+else:
+    profit = position_size * (-real_change / 100)
+# === END REAL_PROFIT_OVERRIDE ===
+
+trades.append({
             "asset": asset,
             "action": action,
             "price": price,
