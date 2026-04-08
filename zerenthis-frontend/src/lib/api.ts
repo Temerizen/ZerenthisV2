@@ -11,7 +11,7 @@ async function safeJson(path: string, options?: RequestInit) {
     try {
       return JSON.parse(text);
     } catch {
-      return { raw: text, ok: res.ok, status: res.status };
+      return { ok: res.ok, status: res.status, raw: text, path };
     }
   } catch (error: any) {
     return {
@@ -27,35 +27,77 @@ export async function getHealth() {
 }
 
 export async function runAutopilot() {
-  return safeJson("/api/automation/run-once", {
+  return safeJson("/api/autopilot/run", {
     method: "POST",
   });
-}
-
-export async function getLeaderboard() {
-  return safeJson("/api/performance/leaderboard");
-}
-
-export async function getAutomationStatus() {
-  return safeJson("/api/automation/status");
 }
 
 export async function getTargets() {
-  const primary = await safeJson("/api/intelligence/run", {
+  return safeJson("/api/targets/rank", {
     method: "POST",
   });
-
-  if (!primary?.error) return primary;
-
-  return safeJson("/api/targets");
 }
 
-export async function runAutonomyLoop(iterations = 3, delay = 1) {
-  return safeJson("/api/autonomy/run", {
+export async function getPhaseVerify() {
+  return safeJson("/api/phase/verify");
+}
+
+export async function runPostingPlan() {
+  return safeJson("/api/posting/plan", {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({ iterations, delay }),
+  });
+}
+
+export async function runPostingPrepare() {
+  return safeJson("/api/posting/prepare", {
+    method: "POST",
+  });
+}
+
+export async function runPostingExecute() {
+  return safeJson("/api/posting/execute", {
+    method: "POST",
+  });
+}
+
+export async function getPostingResult() {
+  return safeJson("/api/posting/result", {
+    method: "POST",
+  });
+}
+
+export async function runRealityLoop() {
+  return safeJson("/api/reality/loop", {
+    method: "POST",
+  });
+}
+
+export async function runRealityAutoLoop() {
+  return safeJson("/api/reality/auto-loop", {
+    method: "POST",
+  });
+}
+
+export async function runRealityExport() {
+  return safeJson("/api/reality/export", {
+    method: "POST",
+  });
+}
+
+export async function runScale() {
+  return safeJson("/api/scale/run", {
+    method: "POST",
+  });
+}
+
+export async function runTrafficReal() {
+  return safeJson("/api/traffic/real", {
+    method: "POST",
+  });
+}
+
+export async function runTrafficBridge() {
+  return safeJson("/api/traffic/bridge", {
+    method: "POST",
   });
 }

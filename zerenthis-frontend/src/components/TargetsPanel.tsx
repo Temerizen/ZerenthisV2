@@ -7,14 +7,13 @@ type Props = {
   refreshKey?: number;
 };
 
-function normalizeTargets(data: any): Array<{ name: string; score?: number; source?: string }> {
+function normalizeTargets(data: any): Array<{ name: string; score?: number }> {
   if (!data) return [];
 
   if (Array.isArray(data?.targets)) {
     return data.targets.map((t: any) => ({
       name: t.name || t.topic || t.target || "unknown_target",
       score: t.score,
-      source: "targets",
     }));
   }
 
@@ -22,7 +21,6 @@ function normalizeTargets(data: any): Array<{ name: string; score?: number; sour
     return data.ranked_targets.map((t: any) => ({
       name: t.name || t.topic || t.target || "unknown_target",
       score: t.score,
-      source: "ranked_targets",
     }));
   }
 
@@ -30,15 +28,13 @@ function normalizeTargets(data: any): Array<{ name: string; score?: number; sour
     return data.result.ranked_targets.map((t: any) => ({
       name: t.name || t.topic || t.target || "unknown_target",
       score: t.score,
-      source: "result.ranked_targets",
     }));
   }
 
-  if (Array.isArray(data?.ideas)) {
-    return data.ideas.map((t: any) => ({
-      name: t.name || t.topic || t.target || String(t),
+  if (Array.isArray(data)) {
+    return data.map((t: any) => ({
+      name: t.name || t.topic || t.target || "unknown_target",
       score: t.score,
-      source: "ideas",
     }));
   }
 
@@ -47,7 +43,7 @@ function normalizeTargets(data: any): Array<{ name: string; score?: number; sour
 
 export default function TargetsPanel({ refreshKey = 0 }: Props) {
   const [data, setData] = useState<any>(null);
-  const [targets, setTargets] = useState<Array<{ name: string; score?: number; source?: string }>>([]);
+  const [targets, setTargets] = useState<Array<{ name: string; score?: number }>>([]);
   const [loading, setLoading] = useState(true);
 
   const load = async () => {
@@ -71,7 +67,7 @@ export default function TargetsPanel({ refreshKey = 0 }: Props) {
       minHeight: "220px"
     }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "12px" }}>
-        <h2 style={{ margin: 0 }}>Active Targets</h2>
+        <h2 style={{ margin: 0 }}>Ranked Targets</h2>
         <button
           onClick={load}
           style={{
@@ -87,22 +83,17 @@ export default function TargetsPanel({ refreshKey = 0 }: Props) {
         </button>
       </div>
 
-      {loading && <p style={{ color: "#9ca3af" }}>Scanning target field...</p>}
+      {loading && <p style={{ color: "#9ca3af" }}>Ranking targets...</p>}
 
       {!loading && targets.length === 0 && (
-        <div>
-          <p style={{ color: "#f59e0b", marginBottom: "10px" }}>
-            No structured targets found yet.
-          </p>
-          <pre style={{
-            margin: 0,
-            fontSize: "11px",
-            color: "#9ca3af",
-            whiteSpace: "pre-wrap"
-          }}>
-            {JSON.stringify(data, null, 2)}
-          </pre>
-        </div>
+        <pre style={{
+          margin: 0,
+          fontSize: "11px",
+          color: "#9ca3af",
+          whiteSpace: "pre-wrap"
+        }}>
+          {JSON.stringify(data, null, 2)}
+        </pre>
       )}
 
       {!loading && targets.length > 0 && (
@@ -119,7 +110,7 @@ export default function TargetsPanel({ refreshKey = 0 }: Props) {
             >
               <div style={{ fontWeight: 600 }}>{target.name}</div>
               <div style={{ color: "#9ca3af", fontSize: "12px", marginTop: "4px" }}>
-                Score: {target.score ?? "N/A"} {target.source ? `• Source: ${target.source}` : ""}
+                Score: {target.score ?? "N/A"}
               </div>
             </div>
           ))}

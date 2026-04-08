@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getAutomationStatus, getHealth } from "@/lib/api";
+import { getHealth, getPhaseVerify } from "@/lib/api";
 
 type Props = {
   refreshKey?: number;
@@ -9,22 +9,20 @@ type Props = {
 
 export default function SystemStatusPanel({ refreshKey = 0 }: Props) {
   const [health, setHealth] = useState<any>(null);
-  const [automation, setAutomation] = useState<any>(null);
+  const [phase, setPhase] = useState<any>(null);
 
   const load = async () => {
-    const [h, a] = await Promise.all([
+    const [h, p] = await Promise.all([
       getHealth(),
-      getAutomationStatus(),
+      getPhaseVerify(),
     ]);
     setHealth(h);
-    setAutomation(a);
+    setPhase(p);
   };
 
   useEffect(() => {
     load();
   }, [refreshKey]);
-
-  const healthy = health?.status === "ok";
 
   return (
     <div style={{
@@ -42,8 +40,8 @@ export default function SystemStatusPanel({ refreshKey = 0 }: Props) {
           padding: "10px 12px",
           border: "1px solid #1f2937"
         }}>
-          <div style={{ fontSize: "12px", color: "#9ca3af" }}>Backend Health</div>
-          <div style={{ color: healthy ? "#10b981" : "#ef4444", fontWeight: 700, marginTop: "4px" }}>
+          <div style={{ fontSize: "12px", color: "#9ca3af" }}>Backend</div>
+          <div style={{ color: health?.status === "ok" ? "#10b981" : "#ef4444", fontWeight: 700, marginTop: "4px" }}>
             {health?.status || "unknown"}
           </div>
         </div>
@@ -54,9 +52,9 @@ export default function SystemStatusPanel({ refreshKey = 0 }: Props) {
           padding: "10px 12px",
           border: "1px solid #1f2937"
         }}>
-          <div style={{ fontSize: "12px", color: "#9ca3af" }}>Automation Status</div>
-          <div style={{ color: "#e5e7eb", marginTop: "4px" }}>
-            {automation?.status || automation?.state || automation?.message || "No status yet"}
+          <div style={{ fontSize: "12px", color: "#9ca3af" }}>Phase Verification</div>
+          <div style={{ color: "#e5e7eb", marginTop: "4px", whiteSpace: "pre-wrap" }}>
+            {phase?.status || phase?.phase || phase?.message || JSON.stringify(phase)}
           </div>
         </div>
       </div>

@@ -27,8 +27,8 @@ export default function RunAutopilot({ onRan }: Props) {
       border: "1px solid #1f2937"
     }}>
       <h2 style={{ marginTop: 0 }}>Autopilot Control</h2>
-      <p style={{ color: "#9ca3af", marginTop: "0", marginBottom: "12px" }}>
-        Trigger one safe cycle through the control loop.
+      <p style={{ color: "#9ca3af", marginTop: 0 }}>
+        Trigger the real backend autopilot route.
       </p>
 
       <button
