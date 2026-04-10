@@ -96,7 +96,7 @@ def run(payload=None):
             "action": "hold"
         }
 
-    # if low queue â†’ always refill
+    # if low queue Ã¢â€ â€™ always refill
     if decision["needs_refill"]:
         prep = prepare_run({"simulate_only": True})
         return {

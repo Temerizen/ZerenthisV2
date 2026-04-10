@@ -66,7 +66,7 @@ def get_active():
     lock = load_json(ACTIVE_LOCK_FILE, {})
     return lock.get("active_topic)
 
-log("ÃƒÂ°Ã…Â¸Ã‚Â§Ã‚Â  AUTOPILOT DIVERSITY MODE)
+log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€šÃ‚Â§Ãƒâ€šÃ‚Â  AUTOPILOT DIVERSITY MODE)
 
 while True:
     try:
@@ -74,48 +74,48 @@ while True:
 
         if ctrl.get("autopilot_paused", False):
 
-            log("ÃƒÂ¢Ã‚ÂÃ‚Â¸ paused by founder control)
+            log("ÃƒÆ’Ã‚Â¢Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¸ paused by founder control)
 
             time.sleep(DELAY)
 
             continue
 
-        log("ÃƒÂ°Ã…Â¸Ã…Â¡Ã¢â€šÂ¬ expand); post("/api/topics/expand)
-        log("ÃƒÂ°Ã…Â¸Ã‚ÂÃ¢â‚¬â€ pipeline); post("/api/pipeline/build)
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€¦Ã‚Â¡ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ expand); post("/api/topics/expand)
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€šÃ‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â pipeline); post("/api/pipeline/build)
 
         current = load_json(ACTIVE_CANDIDATE_FILE, {})
         if not current.get("topic):
-            log("ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‹â€  promote (bootstrap))
+            log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒâ€¹Ã¢â‚¬Â  promote (bootstrap))
             post("/api/promote/active)
 
-        log("ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ¢â‚¬â€ sync); post("/api/active/sync)
-        log("ÃƒÂ¢Ã…â€œÃ‚Â¨ polish); post("/api/polish/storefront)
-        log("ÃƒÂ°Ã…Â¸Ã¢â‚¬ÂÃ¢â‚¬â€ bind); post("/api/bind/products)
-        log("ÃƒÂ°Ã…Â¸Ã‚Â§Ã‚Â¾ bind UI); post("/api/bind/storefront)
-        log("ÃƒÂ°Ã…Â¸Ã…â€™Ã‚Â¿ diversity); diversity = post("/api/diversity/update)
-        log("ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã…Â  performance); post("/api/performance/run)
-        log("ÃƒÂ¢Ã…Â¡Ã¢â‚¬ÂÃƒÂ¯Ã‚Â¸Ã‚Â battle); battle = post("/api/battle/run)
-        log("ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â£ traffic convert); traffic = post("/api/traffic/convert)
-        log("ÃƒÂ°Ã…Â¸Ã¢â‚¬â„¢Ã‚Â° revenue); revenue = post("/api/revenue/update)
-        log("ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã…Â  scaling); scaling = post("/api/scaling/update)
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â sync); post("/api/active/sync)
+        log("ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã¢â‚¬Å“Ãƒâ€šÃ‚Â¨ polish); post("/api/polish/storefront)
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â bind); post("/api/bind/products)
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€šÃ‚Â§Ãƒâ€šÃ‚Â¾ bind UI); post("/api/bind/storefront)
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€¦Ã¢â‚¬â„¢Ãƒâ€šÃ‚Â¿ diversity); diversity = post("/api/diversity/update)
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒâ€¦Ã‚Â  performance); post("/api/performance/run)
+        log("ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã‚Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¸Ãƒâ€šÃ‚Â battle); battle = post("/api/battle/run)
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒâ€šÃ‚Â£ traffic convert); traffic = post("/api/traffic/convert)
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢Ãƒâ€šÃ‚Â° revenue); revenue = post("/api/revenue/update)
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒâ€¦Ã‚Â  scaling); scaling = post("/api/scaling/update)
 
-        log("ÃƒÂ°Ã…Â¸Ã…Â¡Ã¢â€šÂ¬ amplify); amplify = run_amplify()
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€¦Ã‚Â¡ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ amplify); amplify = run_amplify()
 
-        log("ÃƒÂ°Ã…Â¸Ã…Â½Ã‚Â¯ weight); weight = run_traffic_weighting()
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€¦Ã‚Â½Ãƒâ€šÃ‚Â¯ weight); weight = run_traffic_weighting()
 
-        log("ÃƒÂ¢Ã…Â¡Ã¢â‚¬â€œÃƒÂ¯Ã‚Â¸Ã‚Â split); split = run_dual_allocation()
+        log("ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã‚Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¸Ãƒâ€šÃ‚Â split); split = run_dual_allocation()
 
-        log("ÃƒÂ°Ã…Â¸Ã‚Â§Ã‚Â­ founder); founder = run_founder_status()
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€šÃ‚Â§Ãƒâ€šÃ‚Â­ founder); founder = run_founder_status()
 
-        log("ÃƒÂ°Ã…Â¸Ã¢â‚¬â„¢Ã‚Â¾ snapshot); snapshot = run_snapshot()
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢Ãƒâ€šÃ‚Â¾ snapshot); snapshot = run_snapshot()
 
-        log("ÃƒÂ°Ã…Â¸Ã‚Â§Ã‚Â  intel); intel = run_intelligence()
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€šÃ‚Â§Ãƒâ€šÃ‚Â  intel); intel = run_intelligence()
 
-        log("ÃƒÂ°Ã…Â¸Ã¢â‚¬Å“Ã‚Â¦ bundle); bundle = run_export_bundle()
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒâ€šÃ‚Â¦ bundle); bundle = run_export_bundle()
 
-        log("ÃƒÂ°Ã…Â¸Ã‚Â§Ã‚Â± format); formatted = run_formatter()
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€šÃ‚Â§Ãƒâ€šÃ‚Â± format); formatted = run_formatter()
 
-        log("ÃƒÂ°Ã…Â¸Ã…Â¡Ã¢â€šÂ¬ launch); launch = run_launch_ready_bundle()
+        log("ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€¦Ã‚Â¡ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ launch); launch = run_launch_ready_bundle()
 
         active = get_active()
         decision = battle.get("decision", "unknown)
@@ -145,14 +145,14 @@ while True:
 
         append_jsonl(LOG_FILE, summary)
 
-        log(f"ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â ACTIVE: {active})
-        log(f"ÃƒÂ¢Ã…Â¡Ã¢â‚¬ÂÃƒÂ¯Ã‚Â¸Ã‚Â DECISION: {decision})
-        log(f"ÃƒÂ°Ã…Â¸Ã…â€™Ã‚Â¿ FATIGUE: {diversity.get('fatigue_penalty', 0)} | EXPLORE+: {diversity.get('exploration_boost', 0)})
-        log(f"ÃƒÂ°Ã…Â¸Ã¢â‚¬â„¢Ã‚Âµ LOOP SALES: {conversions} | LOOP REV: ${earned})
-        log(f"ÃƒÂ°Ã…Â¸Ã‚ÂÃ‚Â¦ TRACKED SALES: {revenue.get('sales', 0)} | TRACKED REV: ${revenue.get('revenue', 0)})
+        log(f"ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â ACTIVE: {active})
+        log(f"ÃƒÆ’Ã‚Â¢Ãƒâ€¦Ã‚Â¡ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¸Ãƒâ€šÃ‚Â DECISION: {decision})
+        log(f"ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€¦Ã¢â‚¬â„¢Ãƒâ€šÃ‚Â¿ FATIGUE: {diversity.get('fatigue_penalty', 0)} | EXPLORE+: {diversity.get('exploration_boost', 0)})
+        log(f"ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢Ãƒâ€šÃ‚Âµ LOOP SALES: {conversions} | LOOP REV: ${earned})
+        log(f"ÃƒÆ’Ã‚Â°Ãƒâ€¦Ã‚Â¸Ãƒâ€šÃ‚ÂÃƒâ€šÃ‚Â¦ TRACKED SALES: {revenue.get('sales', 0)} | TRACKED REV: ${revenue.get('revenue', 0)})
 
     except Exception as e:
-        log(f"ÃƒÂ¢Ã‚ÂÃ…â€™ {e})
+        log(f"ÃƒÆ’Ã‚Â¢Ãƒâ€šÃ‚ÂÃƒâ€¦Ã¢â‚¬â„¢ {e})
 
     time.sleep(DELAY)
 

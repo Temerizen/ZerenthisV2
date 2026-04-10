@@ -1,4 +1,10 @@
+from backend.app.routes import max_evolution
+from backend.app.routes import evolution
+from backend.app.routes import autonomous_builder
+from backend.app.routes import builder_intelligence
+from backend.app.routes import builder
 from fastapi import FastAPI
+from backend.app.routes import autopilot
 from backend.app.routes import intelligence
 from fastapi.middleware.cors import CORSMiddleware
 from backend.app.routes.phase_verify import router as phase_verify_router
@@ -27,6 +33,7 @@ from backend.app.routes.full_cycle import router as full_cycle_router
 from backend.app.routes.revenue import router as revenue_router
 
 app = FastAPI()
+app.include_router(autopilot.router)
 app.include_router(intelligence.router, prefix="/api")
 
 app.add_middleware(
@@ -99,4 +106,16 @@ from backend.app.engines.trade_memory import get_stats
 @app.get("/api/market/stats")
 def market_stats():
     return get_stats()
+
+
+app.include_router(builder.router)
+
+app.include_router(builder_intelligence.router)
+
+app.include_router(autonomous_builder.router)
+
+app.include_router(evolution.router)
+
+app.include_router(max_evolution.router)
+
 

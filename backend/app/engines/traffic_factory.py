@@ -16,24 +16,24 @@ def clean(topic):
 def generate_hooks(t):
     return [
         f"No one tells you this about {t}",
-        f"This is why {t} isnâ€™t working for you",
-        f"If youâ€™re struggling with {t}, read this",
+        f"This is why {t} isnÃ¢â‚¬â„¢t working for you",
+        f"If youÃ¢â‚¬â„¢re struggling with {t}, read this",
         f"99% of people fail at {t} because of this",
         f"The hidden truth about {t}"
     ]
 
 def generate_posts(t):
     return [
-        f"I tried fixing {t} and realized something most people miss.\n\nItâ€™s not effort. Itâ€™s structure.\n\nHereâ€™s what actually works ðŸ‘‡",
-        f"Hot take: {t} isnâ€™t hard.\n\nYouâ€™ve just never been shown the system.\n\nHere it is:",
+        f"I tried fixing {t} and realized something most people miss.\n\nItÃ¢â‚¬â„¢s not effort. ItÃ¢â‚¬â„¢s structure.\n\nHereÃ¢â‚¬â„¢s what actually works Ã°Å¸â€˜â€¡",
+        f"Hot take: {t} isnÃ¢â‚¬â„¢t hard.\n\nYouÃ¢â‚¬â„¢ve just never been shown the system.\n\nHere it is:",
         f"Everyone overcomplicates {t}.\n\nThe real path is simpler.\n\nStep 1:"
     ]
 
 def generate_scripts(t):
     return [
-        f"Hook: Stop doing {t} like this.\nBody: Hereâ€™s what actually works...\nCTA: Follow.",
-        f"Hook: Youâ€™re wasting time on {t}.\nBody: Fix it like this...\nCTA: Save.",
-        f"Hook: The real reason {t} isnâ€™t working.\nBody: Itâ€™s this...\nCTA: Try today."
+        f"Hook: Stop doing {t} like this.\nBody: HereÃ¢â‚¬â„¢s what actually works...\nCTA: Follow.",
+        f"Hook: YouÃ¢â‚¬â„¢re wasting time on {t}.\nBody: Fix it like this...\nCTA: Save.",
+        f"Hook: The real reason {t} isnÃ¢â‚¬â„¢t working.\nBody: ItÃ¢â‚¬â„¢s this...\nCTA: Try today."
     ]
 
 def run():
