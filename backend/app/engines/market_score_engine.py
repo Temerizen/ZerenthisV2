@@ -1,9 +1,9 @@
-from backend.app.engines.market_portfolio_engine import load_portfolio
+﻿from backend.app.engines.market_portfolio_engine import load_portfolio
 
 def score_trades(trades):
-    total = round(sum(float(t.get("profit", 0)) for t in trades), 2)
-    wins = len([t for t in trades if float(t.get("profit", 0)) > 0])
-    losses = len([t for t in trades if float(t.get("profit", 0)) < 0])
+    total = round(sum(float(t.get("pnl", t.get("profit", 0))) for t in trades), 2)
+    wins = len([t for t in trades if float(t.get("pnl", t.get("profit", 0))) > 0])
+    losses = len([t for t in trades if float(t.get("pnl", t.get("profit", 0))) < 0])
     portfolio = load_portfolio()
 
     starting_balance = float(portfolio.get("starting_balance", 50.0))
@@ -19,3 +19,4 @@ def score_trades(trades):
         "ending_balance": round(balance, 2),
         "pnl_percent": pnl_pct
     }
+

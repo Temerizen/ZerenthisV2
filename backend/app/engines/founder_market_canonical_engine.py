@@ -1,102 +1,240 @@
-from datetime import datetime, timezone
-from typing import Dict, Any
+﻿import time
+import importlib
+import random
+import json
+import os
+from backend.app.engines.strategy_performance_engine import best_strategy, confidence_multiplier, update_strategy_result
 
-from backend.app.engines.market_data_engine import scan_market
-from backend.app.engines.market_paper_engine import run_paper_trades
-from backend.app.engines.market_portfolio_engine import load_portfolio, reset_portfolio
-from backend.app.engines.market_score_engine import score_trades
-from backend.app.engines.market_state_engine import load_market_state, save_market_state
-from backend.app.engines.market_memory_engine import update_memory
-from backend.app.engines.market_strategy_competition import run_strategies
-from backend.app.engines.market_strategy_leaderboard import update_strategy_board, load_strategy_board
-from backend.app.engines.market_winner_signal_engine import build_signals_for_strategy
-from backend.app.engines.market_genetics_engine import load_genetics, evolve_genetics
-from backend.app.engines.trade_memory import save_trade, get_stats
-from backend.app.engines.performance_engine import update_performance
-from backend.app.engines.strategy_lock import should_lock
+def _resolve(module_name, candidate_names, required=True):
+    mod = importlib.import_module(module_name)
+    for name in candidate_names:
+        fn = getattr(mod, name, None)
+        if callable(fn):
+            return fn
+    if required:
+        raise ImportError(f"No callable found in {module_name}. Tried: {candidate_names}")
+    return None
 
-def _now_iso() -> str:
-    return datetime.now(timezone.utc).isoformat()
+def _safe_dict(value, default=None):
+    if default is None:
+        default = {}
+    return value if isinstance(value, dict) else default
 
-def _safe_best_strategy(strategy_results: Dict[str, Any], strategy_board: Dict[str, Any]) -> str:
-    board = strategy_board.get("strategies", {}) or {}
-    locked = []
-    for name, row in board.items():
-        if should_lock(row):
-            locked.append((name, float(row.get("avg_profit", 0.0))))
-    if locked:
-        locked.sort(key=lambda x: x[1], reverse=True)
-        return locked[0][0]
-    return strategy_results.get("best_strategy", "conservative")
+def _safe_list(value):
+    return value if isinstance(value, list) else []
 
-def run_strategy_cycle() -> Dict[str, Any]:
-    data = scan_market()
-    strategy_results = run_strategies(data)
-    strategy_board = update_strategy_board(strategy_results.get("strategies", {}), strategy_results.get("best_strategy", "conservative"))
-    genetics = evolve_genetics(strategy_board, load_genetics())
+def _load_json(path, default):
+    if os.path.exists(path):
+        try:
+            with open(path, "r", encoding="utf-8-sig") as f:
+                return json.load(f)
+        except:
+            return default.copy() if isinstance(default, dict) else default
+    return default.copy() if isinstance(default, dict) else default
 
-    state = load_market_state()
-    state.update({
-        "status": "strategy_cycle_complete",
-        "strategy_results": strategy_results,
-        "strategy_board": strategy_board,
-        "genetics": genetics,
-        "scan": data,
-        "updated_at": _now_iso(),
-    })
-    save_market_state(state)
+def _load_portfolio_engine():
+    return importlib.import_module("backend.app.engines.market_portfolio_engine")
 
+def _fallback_strategy_results(data):
+    winner = best_strategy()
+    strategies = {
+        "momentum": {"trades": 0, "wins": 0, "losses": 0, "profit": 0.0, "winrate": 0.0},
+        "mean_reversion": {"trades": 0, "wins": 0, "losses": 0, "profit": 0.0, "winrate": 0.0},
+        "breakout": {"trades": 0, "wins": 0, "losses": 0, "profit": 0.0, "winrate": 0.0},
+        "conservative": {"trades": 0, "wins": 0, "losses": 0, "profit": 0.0, "winrate": 0.0}
+    }
     return {
-        "status": "strategy_cycle_complete",
-        "scan": data,
-        "results": strategy_results,
-        "strategy_board": strategy_board,
-        "genetics": genetics,
-        "timestamp": state["updated_at"],
+        "best_strategy": winner,
+        "strategies": strategies,
+        "signals": []
     }
 
-def run_winner_cycle() -> Dict[str, Any]:
-    data = scan_market()
-    strategy_results = run_strategies(data)
-    strategy_board = update_strategy_board(strategy_results.get("strategies", {}), strategy_results.get("best_strategy", "conservative"))
-    genetics = evolve_genetics(strategy_board, load_genetics())
-    best_strategy = _safe_best_strategy(strategy_results, strategy_board)
+def _hybrid_action(change: float) -> str:
+    if abs(change) > 3.0:
+        return "SELL" if change > 0 else "BUY"
+    return "BUY" if change > 0 else "SELL"
 
-    signals = build_signals_for_strategy(best_strategy, data)
-    trades = run_paper_trades(signals, data)
-    for trade in trades:
-        save_trade(trade)
+def _winner_only_signals(strategy_results, data):
+    winner = strategy_results.get("best_strategy", "conservative")
+    mult = confidence_multiplier(winner)
+    out = []
+
+    for item in data:
+        if not isinstance(item, dict):
+            continue
+
+        asset = item.get("asset")
+        price = float(item.get("price", 0) or 0)
+        change = float(item.get("change", 0) or 0)
+
+        if not asset or price <= 0:
+            continue
+
+        action = _hybrid_action(change)
+
+        if winner == "breakout":
+            if abs(change) >= 2.0:
+                out.append({
+                    "asset": asset,
+                    "action": action,
+                    "price": price,
+                    "confidence": round(max(1.0, abs(change)) * mult, 4),
+                    "reason": "winner_breakout",
+                    "strategy": "breakout"
+                })
+
+        elif winner == "conservative":
+            if abs(change) >= 1.5:
+                out.append({
+                    "asset": asset,
+                    "action": action,
+                    "price": price,
+                    "confidence": round(max(1.0, abs(change)) * mult, 4),
+                    "reason": "winner_conservative",
+                    "strategy": "conservative"
+                })
+
+        elif winner == "momentum":
+            if abs(change) >= 2.0:
+                out.append({
+                    "asset": asset,
+                    "action": action,
+                    "price": price,
+                    "confidence": round(max(1.0, abs(change)) * mult, 4),
+                    "reason": "winner_momentum",
+                    "strategy": "momentum"
+                })
+
+        elif winner == "mean_reversion":
+            if abs(change) >= 2.5:
+                out.append({
+                    "asset": asset,
+                    "action": "SELL" if change > 0 else "BUY",
+                    "price": price,
+                    "confidence": round(max(1.0, abs(change)) * mult, 4),
+                    "reason": "winner_mean_reversion",
+                    "strategy": "mean_reversion"
+                })
+
+    out = sorted(out, key=lambda x: float(x.get("confidence", 0) or 0), reverse=True)[:1]
+    return out
+
+def _quality_gate(signals, chosen_strategy):
+    perf = _load_json("backend/data/strategy_performance.json", {})
+    streak = _load_json("backend/data/streak_state.json", {"win_streak": 0, "loss_streak": 0})
+
+    strat_score = float(perf.get(chosen_strategy, {}).get("score", 0.0))
+    loss_streak = int(streak.get("loss_streak", 0))
+
+    gated = []
+    for s in signals:
+        confidence = float(s.get("confidence", 0) or 0)
+
+        # Hard filters
+        if strat_score < 0.005:
+            continue
+        if confidence < 1.75:
+            continue
+        if loss_streak >= 2:
+            continue
+
+        gated.append(s)
+
+    return gated
+
+def run_full_cycle():
+    get_data = _resolve(
+        "backend.app.engines.market_data_engine",
+        ["get_market_data", "fetch_market_data", "scan_market", "run_market_scan", "get_data"]
+    )
+    run_paper_trades = _resolve(
+        "backend.app.engines.market_paper_engine",
+        ["run_paper_trades"]
+    )
+    score_trades = _resolve(
+        "backend.app.engines.market_score_engine",
+        ["score_trades"]
+    )
+    load_portfolio = _resolve(
+        "backend.app.engines.market_portfolio_engine",
+        ["load_portfolio"]
+    )
+    evolve_strategies = _resolve(
+        "backend.app.engines.market_adaptive_engine",
+        ["evolve_strategies"]
+    )
+    strategy_fn = _resolve(
+        "backend.app.engines.market_strategy_engine",
+        ["run_strategies", "generate_strategy_signals", "build_signals", "run_strategy_engine"],
+        required=False
+    )
+
+    data = get_data()
+    if isinstance(data, dict):
+        data = data.get("scan", data.get("data", data))
+    data = _safe_list(data)
+
+    if strategy_fn:
+        strategy_results = strategy_fn(data)
+        strategy_results = _safe_dict(strategy_results, {
+            "best_strategy": best_strategy(),
+            "strategies": {},
+            "signals": []
+        })
+    else:
+        strategy_results = _fallback_strategy_results(data)
+
+    if not strategy_results.get("best_strategy"):
+        strategy_results["best_strategy"] = best_strategy()
+
+    chosen_strategy = strategy_results.get("best_strategy", "conservative")
+    signals = _winner_only_signals(strategy_results, data)
+    signals = _quality_gate(signals, chosen_strategy)
+
+    trades = run_paper_trades(data, signals)
+    trades = _safe_list(trades)
+
+    loop_pnl = round(sum(float(t.get("pnl", 0) or 0) for t in trades if isinstance(t, dict)), 4)
+    update_strategy_result(chosen_strategy, loop_pnl)
 
     score = score_trades(trades)
-    memory = update_memory(trades)
-    portfolio = load_portfolio()
-    performance = update_performance(float(portfolio.get("balance", 0.0)))
+    score = _safe_dict(score, {
+        "total_profit": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "trades": len(trades),
+        "ending_balance": 50.0,
+        "pnl_percent": 0.0
+    })
 
-    state = load_market_state()
-    state.update({
-        "status": "winner_cycle_complete",
-        "best_strategy": best_strategy,
+    portfolio = load_portfolio()
+    portfolio = _safe_dict(portfolio, {"balance": 50.0})
+
+    genetics = evolve_strategies(strategy_results)
+    genetics = _safe_dict(genetics, {})
+
+    return {
+        "status": "full_cycle_complete",
+        "best_strategy": chosen_strategy,
         "strategy_results": strategy_results,
-        "strategy_board": strategy_board,
-        "genetics": genetics,
         "scan": data,
         "signals": signals,
         "trades": trades,
         "score": score,
-        "memory": memory,
         "portfolio": portfolio,
-        "performance": performance,
-        "stats": get_stats(),
-        "updated_at": _now_iso(),
-    })
-    save_market_state(state)
-    return state
+        "genetics": genetics,
+        "updated_at": int(time.time())
+    }
 
-def run_full_cycle() -> Dict[str, Any]:
-    result = run_winner_cycle()
-    result["status"] = "full_cycle_complete"
-    save_market_state(result)
-    return result
+def run_winner_cycle():
+    return run_full_cycle()
 
-def reset_founder_portfolio(starting_balance: float = 50.0, risk_per_trade: float = 0.10) -> Dict[str, Any]:
-    return reset_portfolio(starting_balance, risk_per_trade)
+def run_strategy_cycle():
+    return run_full_cycle()
+
+def reset_founder_portfolio(starting_balance=50.0, risk_per_trade=0.1):
+    portfolio_engine = _load_portfolio_engine()
+    reset_fn = getattr(portfolio_engine, "reset_portfolio", None)
+    if not callable(reset_fn):
+        raise ImportError("reset_portfolio not found in market_portfolio_engine")
+    return reset_fn(starting_balance=starting_balance, risk_per_trade=risk_per_trade)

@@ -1,59 +1,42 @@
-import random
-import json
+﻿import json
 import os
 
-SCORE_FILE = "backend/data/scores.json"
+STATE_FILE = os.path.join("backend","data","intelligence_state.json")
+PERF_FILE = os.path.join("backend","data","perf_window.json")
 
-def leaderboard():
-    if not os.path.exists(SCORE_FILE):
-        return []
-    try:
-        with open(SCORE_FILE, "r", encoding="utf-8") as f:
-            scores = json.load(f)
-    except:
-        return []
+def load_state():
+    if not os.path.exists(STATE_FILE):
+        return {"confidence_threshold": 1.25}
+    return json.load(open(STATE_FILE, "r", encoding="utf-8-sig"))
 
-    if not isinstance(scores, dict):
-        return []
+def save_state(state):
+    json.dump(state, open(STATE_FILE, "w"), indent=2)
 
-    ranked = []
-    for topic, values in scores.items():
-        if not isinstance(values, list) or not values:
-            continue
-        clean_values = [float(v) for v in values]
-        avg = round(sum(clean_values) / len(clean_values), 2)
-        ranked.append({
-            "topic": topic,
-            "runs": len(clean_values),
-            "avg_score": avg,
-            "best_score": max(clean_values)
-        })
+def load_perf():
+    if not os.path.exists(PERF_FILE):
+        return {"recent_pnl": []}
+    return json.load(open(PERF_FILE, "r", encoding="utf-8-sig"))
 
-    ranked.sort(key=lambda x: x["avg_score"], reverse=True)
-    return ranked
+def run_intelligence():
+    state = load_state()
+    perf = load_perf()
 
-def generate_topic():
-    ranked = leaderboard()
+    recent = perf.get("recent_pnl", [])[-20:]
+    if len(recent) < 10:
+        return {"status": "not_enough_data"}
 
-    base = [
-        "AI productivity system",
-        "faceless content engine",
-        "automated money system",
-        "self-improving workflow",
-        "digital product generator"
-    ]
+    avg = sum(recent)/len(recent)
 
-    if ranked and random.random() < 0.55:
-        pool = ranked[:3] if len(ranked) >= 3 else ranked
-        return random.choice(pool)["topic"]
+    # adaptive logic
+    if avg < 0:
+        state["confidence_threshold"] = min(1.6, state["confidence_threshold"] + 0.05)
+    else:
+        state["confidence_threshold"] = max(1.05, state["confidence_threshold"] - 0.02)
 
-    return random.choice(base)
+    save_state(state)
 
-def simulate(topic: str):
-    score = round(random.uniform(6.5, 9.5), 2)
     return {
-        "topic": topic,
-        "score": score,
-        "verdict": "keep" if score > 7.5 else "discard"
+        "status": "adjusted",
+        "new_threshold": state["confidence_threshold"],
+        "avg_recent_pnl": avg
     }
-

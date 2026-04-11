@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Header, HTTPException
+import traceback
 from pydantic import BaseModel
 
 from backend.app.engines.market_access_engine import is_founder
@@ -36,7 +37,7 @@ def founder_market_run(x_api_key: str = Header(None)):
     try:
         return run_full_cycle()
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"founder_market_run_failed: {e}")
+        raise HTTPException(status_code=500, detail=f"founder_market_run_failed: {e}`nTRACEBACK:`n{traceback.format_exc()}")
 
 @router.post("/founder/market/strategy-run")
 def founder_market_strategy_run(x_api_key: str = Header(None)):
@@ -86,3 +87,4 @@ def market_genetics():
 @router.get("/market/stats")
 def market_stats():
     return get_stats()
+

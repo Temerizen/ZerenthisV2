@@ -1,4 +1,4 @@
-import json, os
+﻿import json, os
 from datetime import datetime
 from backend.app.engines.mutation_engine import load_dna, save_dna, evolve
 from backend.app.engines.memory_engine import record_cycle, detect_patterns, get_bias
@@ -113,3 +113,5 @@ def run_strategies(market_data, portfolio):
         "portfolio": portfolio,
         "timestamp": datetime.utcnow().isoformat()
     }
+
+
